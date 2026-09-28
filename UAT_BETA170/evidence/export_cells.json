@@ -1,0 +1,937 @@
+{
+ "audited": {
+  "sheets": [
+   "Summary",
+   "Job_Inputs",
+   "Perforations",
+   "Split_Merge",
+   "RESSUM_Active",
+   "Initial_Zonation",
+   "Final_Zonation",
+   "Case_1",
+   "Spurt_Loss_1",
+   "Case_3",
+   "Spurt_Loss_3",
+   "Case_Properties",
+   "Diverter_Loadings",
+   "Analogue_Candidates",
+   "CT_Actual",
+   "BH_Actual",
+   "CT_Prediction_Chart",
+   "BH_Base_Case_Chart",
+   "BH_Case_3_Chart",
+   "Audit_Log"
+  ],
+  "Final_Zonation": {
+   "rows": 79,
+   "headers": [
+    "Zone #",
+    "Zone",
+    "Top MD (ft)",
+    "Bottom MD (ft)",
+    "Top TVD (ft)",
+    "Bottom TVD (ft)",
+    "MD interval (ft)",
+    "TVD interval (ft)",
+    "Base permeability (mD)",
+    "Porosity (fraction)",
+    "Lithology code",
+    "Limestone VCLC (fraction)",
+    "Dolomite VDOL (fraction)",
+    "Reservoir pressure at zone midpoint (psi)",
+    "Fracture gradient at zone-top TVD (psi/ft)",
+    "VCLC \u00d7 MD interval (ft)",
+    "VDOL \u00d7 MD interval (ft)",
+    "Porosity \u00d7 MD interval (ft)",
+    "20% OPR fluid factor",
+    "20% OPR Keff factor",
+    "VDA fluid factor"
+   ],
+   "cells": 1501,
+   "mismatches": [],
+   "mismatchCount": 0
+  },
+  "Case_1": {
+   "rows": 79,
+   "headers": [
+    "Zone #",
+    "Zone",
+    "Top MD (ft)",
+    "Bottom MD (ft)",
+    "Top TVD (ft)",
+    "Bottom TVD (ft)",
+    "MD interval (ft)",
+    "TVD interval (ft)",
+    "Base permeability (mD)",
+    "Case permeability (mD)",
+    "Base MD kH (mD\u00b7ft)",
+    "Case MD kH (mD\u00b7ft)",
+    "Base TVD kH (mD\u00b7ft)",
+    "Case TVD kH (mD\u00b7ft)",
+    "Porosity (fraction)",
+    "Lithology code",
+    "Limestone VCLC (fraction)",
+    "Dolomite VDOL (fraction)",
+    "Reservoir pressure at zone midpoint (psi)",
+    "Fracture gradient at zone-top TVD (psi/ft)",
+    "VCLC \u00d7 MD interval (ft)",
+    "VDOL \u00d7 MD interval (ft)",
+    "Porosity \u00d7 MD interval (ft)",
+    "OPR fluid factor",
+    "OPR Keff factor",
+    "VDA fluid factor"
+   ],
+   "cellsVsClipboard": 1659,
+   "notIdentical": 0
+  },
+  "Spurt_Loss_1": {
+   "headers": [
+    "Zone",
+    "Spurt loss \u00b7 Stage 1 \u00b7 125",
+    "Spurt loss \u00b7 Stage 2 \u00b7 OPS 100-300",
+    "Spurt loss \u00b7 Stage 3 \u00b7 BG50-100"
+   ],
+   "rows": 79,
+   "identicalToClipboard": true
+  },
+  "Case_3": {
+   "rows": 79,
+   "headers": [
+    "Zone #",
+    "Zone",
+    "Top MD (ft)",
+    "Bottom MD (ft)",
+    "Top TVD (ft)",
+    "Bottom TVD (ft)",
+    "MD interval (ft)",
+    "TVD interval (ft)",
+    "Base permeability (mD)",
+    "Case permeability (mD)",
+    "Base MD kH (mD\u00b7ft)",
+    "Case MD kH (mD\u00b7ft)",
+    "Base TVD kH (mD\u00b7ft)",
+    "Case TVD kH (mD\u00b7ft)",
+    "Porosity (fraction)",
+    "Lithology code",
+    "Limestone VCLC (fraction)",
+    "Dolomite VDOL (fraction)",
+    "Reservoir pressure at zone midpoint (psi)",
+    "Fracture gradient at zone-top TVD (psi/ft)",
+    "VCLC \u00d7 MD interval (ft)",
+    "VDOL \u00d7 MD interval (ft)",
+    "Porosity \u00d7 MD interval (ft)",
+    "OPR fluid factor",
+    "OPR Keff factor",
+    "VDA fluid factor"
+   ],
+   "cellsVsClipboard": 1659,
+   "notIdentical": 0
+  },
+  "Spurt_Loss_3": {
+   "headers": [
+    "Zone",
+    "Spurt loss \u00b7 Stage 1 \u00b7 100",
+    "Spurt loss \u00b7 Stage 2 \u00b7 OPS 100-400",
+    "Spurt loss \u00b7 Stage 3 \u00b7 OPS 100-500"
+   ],
+   "rows": 79,
+   "identicalToClipboard": true
+  },
+  "Case_Properties": {
+   "headers": [
+    "Case",
+    "Dolomite multiplier (\u00d7)",
+    "Limestone multiplier (\u00d7)",
+    "Base MD kH (mD\u00b7ft)",
+    "Case MD kH (mD\u00b7ft)",
+    "Base TVD kH (mD\u00b7ft)",
+    "Case TVD kH (mD\u00b7ft)",
+    "Base average k, MD (mD)",
+    "Case average k, MD (mD)",
+    "Base average k, TVD (mD)",
+    "Case average k, TVD (mD)",
+    "Average porosity (fraction)",
+    "MD interval (ft)",
+    "TVD interval (ft)"
+   ],
+   "rows": [
+    [
+     1,
+     1,
+     1,
+     22100.896447379713,
+     22100.896447379713,
+     7116.690263129258,
+     7116.690263129258,
+     18.417413706149762,
+     18.417413706149762,
+     18.267990436492727,
+     18.267990436492727,
+     0.057224433271247446,
+     1200,
+     389.57160000000476
+    ],
+    [
+     3,
+     1.99995507446,
+     1.99995507446,
+     22100.896447379713,
+     44200.800000052055,
+     7116.690263129258,
+     14233.060805105431,
+     18.417413706149762,
+     36.83400000004338,
+     18.267990436492727,
+     36.53516017365038,
+     0.057224433271247446,
+     1200,
+     389.57160000000476
+    ]
+   ]
+  },
+  "Case_Properties_check": {
+   "case1_MDkH": [
+    22100.896447379713,
+    22100.896447379706,
+    true
+   ],
+   "case1_avgPermMD": [
+    18.417413706149762,
+    18.417413706149755,
+    true
+   ],
+   "case3_MDkH_mult": [
+    44200.800000052055,
+    null
+   ]
+  },
+  "Summary": [
+   [
+    "KM Zonation WebAPP",
+    "BETA170",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Well",
+    "NFQ22-4",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Project",
+    "NFE",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Layer",
+    "K1",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Model",
+    "ELAN",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "RKB",
+    82,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Power Mean",
+    1.5,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Prediction cases",
+    "Case 1, Case 3",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Final zonation metric",
+    "Value",
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Perforated MD interval (ft)",
+    1200,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Perforated TVD interval (ft)",
+    389.57160000000476,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Base MD kH (mD\u00b7ft)",
+    22100.896447379713,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Base TVD kH (mD\u00b7ft)",
+    7116.690263129258,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average base permeability, MD (mD)",
+    18.417413706149762,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average base permeability, TVD (mD)",
+    18.267990436492727,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average porosity (fraction)",
+    0.057224433271247446,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average dolomite (fraction)",
+    0.4537500000000001,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average limestone (fraction)",
+    0.5462499999999998,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average dolomite (%)",
+    45.37500000000001,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Average limestone (%)",
+    54.62499999999998,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   [
+    "Case",
+    "Definition",
+    "Dolomite multiplier (\u00d7)",
+    "Limestone multiplier (\u00d7)",
+    "Summary ready",
+    "Case sheet ready"
+   ],
+   [
+    "Case 1",
+    "Base Case",
+    1,
+    1,
+    true,
+    true
+   ],
+   [
+    "Case 3",
+    "Best Case",
+    1.99995507446,
+    1.99995507446,
+    true,
+    true
+   ]
+  ],
+  "Job_Inputs": [
+   [
+    "Parameter",
+    "Value",
+    "str"
+   ],
+   [
+    "Project",
+    "NFE",
+    "str"
+   ],
+   [
+    "Well",
+    "NFQ22-4",
+    "str"
+   ],
+   [
+    "Layer",
+    "K1",
+    "str"
+   ],
+   [
+    "Base Model",
+    "ELAN",
+    "str"
+   ],
+   [
+    "RKB",
+    82,
+    "int"
+   ],
+   [
+    "Power Mean",
+    1.5,
+    "float"
+   ],
+   [
+    "Base cutoff",
+    2000,
+    "int"
+   ],
+   [
+    "Base max zones",
+    55,
+    "int"
+   ],
+   [
+    "More Granular max zones",
+    150,
+    "int"
+   ],
+   [
+    "Probe TVD",
+    8500,
+    "int"
+   ],
+   [
+    "Probe Formation Pressure",
+    3450,
+    "int"
+   ],
+   [
+    "Fracture Gradient at TVDSS",
+    0.817,
+    "float"
+   ],
+   [
+    "Fixed Conversion",
+    0.107,
+    "float"
+   ]
+  ],
+  "Perforations": {
+   "rows": 22,
+   "first": [
+    "K1",
+    10350.25,
+    10390.25
+   ],
+   "types": [
+    "str",
+    "float",
+    "float"
+   ]
+  },
+  "RESSUM_Active": {
+   "rows": 24000,
+   "headers": [
+    "MD (ft)",
+    "TVD (ft)",
+    "TVDSS (ft)",
+    "Permeability (mD)",
+    "Porosity (fraction)",
+    "Water Saturation",
+    "Lithology code",
+    "kL",
+    "Phih"
+   ],
+   "cellDiffs": 0,
+   "missingWrittenAsEmptyText": 53
+  },
+  "CT_Actual": {
+   "headers": [
+    "Stage",
+    "Step",
+    "Fluid",
+    "Conc",
+    "Fluid Label",
+    "Volume (bbl)",
+    "Rate (bbl/min)",
+    "CT start MD (ft)",
+    "CT stop MD (ft)",
+    "CT Speed [ft/s]",
+    "Annulus BHP (psi)"
+   ],
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     "HCL",
+     28,
+     "HCL 28",
+     16.466667,
+     1,
+     11500,
+     11005,
+     -0.5,
+     3615.029999999998
+    ],
+    [
+     "Shut-in",
+     "",
+     "",
+     "",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0,
+     3590
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     "HCL",
+     28,
+     "HCL 28",
+     0.20000000000000284,
+     1.1666650000000278,
+     11005,
+     11000,
+     -0.008986928104575163,
+     3613.3708000000006
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     "HCL",
+     28,
+     "HCL 28",
+     18.633333,
+     2,
+     11000,
+     11500,
+     0.8928571428571429,
+     3634.4812163588726
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     "HCL",
+     28,
+     "HCL 28",
+     24.999999999999993,
+     2,
+     11500,
+     11250,
+     -0.333333333333337,
+     3637.4966667333315
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     "HCL",
+     28,
+     "HCL 28",
+     30.625,
+     2.5000000000000004,
+     11250,
+     11005,
+     -0.33333333333333687,
+     3642.5466667200003
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     "HCL",
+     28,
+     "HCL 28",
+     62.500000000000014,
+     2.5,
+     11005,
+     11495,
+     0.33333333333332615,
+     3644.9533332799997
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     "HCL",
+     28,
+     "HCL 28",
+     50.125,
+     2,
+     11495,
+     11005,
+     -0.33333333333332615,
+     3635.046666733334
+    ]
+   ],
+   "speedFullPrecision": true,
+   "volFullPrecision": true
+  },
+  "BH_Actual": {
+   "headers": [
+    "At Surface",
+    "Step",
+    "Fluid",
+    "Conc",
+    "Fluid Label",
+    "Volume (bbl)",
+    "Rate (bbl/min)",
+    "Cumulative volume (bbl)",
+    "BHP (psi)",
+    "KM readiness"
+   ],
+   "rows": 11,
+   "identical": true
+  },
+  "Diverter_Loadings": {
+   "headers": [
+    "Stage",
+    "Case 1",
+    "Case 3"
+   ],
+   "first3": [
+    [
+     "MaxCO3-1 | OPS-1",
+     125,
+     100
+    ],
+    [
+     "MaxCO3-2 | OPS-2",
+     400,
+     500
+    ],
+    [
+     "MaxCO3-3 | OPS-3",
+     "BG50-100",
+     600
+    ]
+   ],
+   "types": [
+    [
+     "str",
+     "int",
+     "int"
+    ],
+    [
+     "str",
+     "int",
+     "int"
+    ],
+    [
+     "str",
+     "str",
+     "int"
+    ]
+   ]
+  },
+  "Analogue_Candidates": [
+   [
+    "Target case",
+    "Well",
+    "Formation",
+    "Platform",
+    "Same Platform",
+    "Limestone %",
+    "Dolomite %",
+    "Average k after, MD (mD)",
+    "Suggested multiplier (\u00d7)"
+   ],
+   [
+    2,
+    "NFQ22-2",
+    "K1",
+    "NFQ22",
+    true,
+    60,
+    40,
+    22.1004,
+    1.19997304467
+   ],
+   [
+    3,
+    "NFQ22-1",
+    "K1",
+    "NFQ22",
+    true,
+    55.00000000000001,
+    45,
+    36.834,
+    1.99995507446
+   ],
+   [
+    4,
+    "NFQ22-5",
+    "K1",
+    "NFQ22",
+    true,
+    45,
+    55,
+    110.502,
+    5.99986522337
+   ]
+  ],
+  "Audit_Log": {
+   "headers": [
+    "Time (local)",
+    "Time zone",
+    "Page",
+    "Action",
+    "Detail"
+   ],
+   "n": 98,
+   "sample": [
+    [
+     "2026-09-28 22:24:53",
+     "Asia/Dubai",
+     "KM Matching & Final Results",
+     "EXPORT_KM_MATCHING_XLSX",
+     "NFE_NFQ22-4_KM_Matching_Final_Results.xlsx \u00b7 available approved image-only chart sheets"
+    ],
+    [
+     "2026-09-28 22:24:46",
+     "Asia/Dubai",
+     "KM Matching & Final Results",
+     "APPROVE_BH_FINAL_MATCH",
+     "Match Case 1 \u00b7 +5.0 bbl \u00b7 Base perm"
+    ]
+   ],
+   "timeType": "datetime"
+  },
+  "CT_Prediction_Chart": [
+   [
+    "CT BASE CASE PREDICTION CHART",
+    "Value"
+   ],
+   [
+    "Source file",
+    "Clipboard \u00b7 CT Base Case"
+   ],
+   [
+    "Rows",
+    160
+   ],
+   [
+    "Chart image",
+    "Embedded PNG"
+   ]
+  ],
+  "BH_Base_Case_Chart": [
+   [
+    "BULLHEADING PREDICTION CHART",
+    "Value"
+   ],
+   [
+    "Case",
+    "Base Case"
+   ],
+   [
+    "Description",
+    ""
+   ],
+   [
+    "Source file",
+    "Clipboard \u00b7 Base Case"
+   ],
+   [
+    "Rows",
+    150
+   ],
+   [
+    "Chart image",
+    "Embedded PNG"
+   ]
+  ],
+  "BH_Case_3_Chart": [
+   [
+    "BULLHEADING PREDICTION CHART",
+    "Value"
+   ],
+   [
+    "Case",
+    "Case 3"
+   ],
+   [
+    "Description",
+    ""
+   ],
+   [
+    "Source file",
+    "Clipboard \u00b7 Case 3"
+   ],
+   [
+    "Rows",
+    150
+   ],
+   [
+    "Chart image",
+    "Embedded PNG"
+   ]
+  ]
+ },
+ "matching": {
+  "sheets": [
+   "Summary",
+   "Job_Inputs",
+   "Perforations",
+   "RESSUM_Active",
+   "Final_Zonation",
+   "CT Wash Match",
+   "Final Bullheading Match"
+  ],
+  "Summary": [
+   [
+    "KM Zonation WebAPP",
+    "BETA170"
+   ],
+   [
+    "Workbook",
+    "KM Matching & Final Results"
+   ],
+   [
+    "Generated (UTC)",
+    "2026-09-28T18:24:47.527Z"
+   ],
+   [
+    "Project",
+    "NFE"
+   ],
+   [
+    "Well",
+    "NFQ22-4"
+   ],
+   [
+    "Layer",
+    "K1"
+   ],
+   [
+    "Current design probe pressure psi",
+    3450
+   ],
+   [
+    "Approved Bullheading probe pressure psi",
+    3450
+   ],
+   [
+    null,
+    null
+   ],
+   [
+    "MATCH RESULT",
+    "Value"
+   ],
+   [
+    "CT Wash Match KM rows",
+    300
+   ],
+   [
+    "CT Wash Match shift bbl",
+    -12.5
+   ],
+   [
+    "CT Wash Match saved",
+    true
+   ],
+   [
+    "Final Bullheading status",
+    "FINAL APPROVED"
+   ],
+   [
+    "Final Bullheading case",
+    "Match Case 1"
+   ],
+   [
+    "Final Bullheading description",
+    "Base perm"
+   ],
+   [
+    "Final Bullheading shift bbl",
+    5
+   ],
+   [
+    "Final Bullheading KM rows",
+    150
+   ],
+   [
+    "Final Bullheading approved at (UTC)",
+    "2026-09-28T18:24:46.265Z"
+   ],
+   [
+    "Final interpretation",
+    "Synthetic UAT interpretation line 1.\nLine 2 \u2014 diverter response acceptable."
+   ]
+  ],
+  "Final_Zonation_identical_to_audited": true,
+  "CT Wash Match": {
+   "cells": [],
+   "images": 0
+  },
+  "Final Bullheading Match": {
+   "cells": [],
+   "images": 0
+  }
+ }
+}

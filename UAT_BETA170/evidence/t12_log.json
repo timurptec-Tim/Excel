@@ -1,0 +1,19 @@
+{
+  "console": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "errors": [],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "Changing Well, Project or Segment starts a new clean job and clears the previous job data from this browser. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Changing Well, Project or Segment starts a new clean job and clears the previous job data from this browser. Continue?",
+      "policy": "accept"
+    }
+  ],
+  "toasts": []
+}

@@ -1,0 +1,11 @@
+const L=require('./lib');
+(async()=>{const {ctx,page,log}=await L.launch('dbg',{fresh:false});await page.waitForTimeout(2000);
+await L.nav(page,'matching');await page.waitForTimeout(500);
+await page.evaluate(()=>{['ctm85-setup-panel','bhm85-setup-panel'].forEach(id=>{const d=document.getElementById(id);if(d&&!d.open)d.querySelector('summary').click();});});
+const info=async(tag)=>{await page.waitForTimeout(150);const s=await L.lsState(page);console.log(tag,'| shift',s.matching.bh.alignment.shift,'| focus',await page.evaluate(()=>{const e=document.activeElement;return e&&(e.id||e.getAttribute('data-bhm85-field')||e.tagName)}),'| fib0',JSON.stringify(s.matching.bh.stageInputs.windows.filter(w=>w.type==='diverter').map(w=>w.fiberLoading)));};
+const f0=page.locator('#bhm85-stage-tbody tr.diverter input.fiber-input').first();const s0=page.locator('#bhm85-stage-tbody tr.high input.stim-input').first();
+console.log('fiber visible',await f0.isVisible(),'disabled',await f0.isDisabled(), await f0.evaluate(e=>{const r=e.getBoundingClientRect();const cs=getComputedStyle(e);return {r:[r.x,r.y,r.width,r.height],vis:cs.visibility,disp:cs.display,pe:cs.pointerEvents,inert:!!e.closest('[inert]'),panel:document.getElementById('bhm85-stage-panel').className}}));
+await page.click('#bhm59-shift-number',{clickCount:3});await page.keyboard.type('5');await page.keyboard.press('Enter');await info('typed 5 + Enter');
+await f0.click();await info('clicked fiber0');await page.keyboard.type('125');await info('typed 125');await page.keyboard.press('Tab');await info('tab');
+await s0.click();await page.keyboard.type('700');await info('typed stim 700');await page.keyboard.press('Tab');await info('tab2');await page.locator('[data-bhm-descriptor]').first().click();await page.keyboard.type('Base perm');await page.keyboard.press('Tab');await info('descriptor');console.log(JSON.stringify((await L.lsState(page)).matching.bh.cases[0].descriptor));
+await ctx.close();L.stopServer();})();

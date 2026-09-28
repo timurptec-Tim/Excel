@@ -1,0 +1,84 @@
+{
+  "console": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "errors": [],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    },
+    {
+      "type": "confirm",
+      "message": "Refresh Data will invalidate generated zonation, KM cases, and imported prediction review status. Continue?",
+      "policy": "accept"
+    }
+  ],
+  "toasts": []
+}

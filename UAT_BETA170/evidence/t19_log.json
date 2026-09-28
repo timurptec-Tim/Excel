@@ -1,0 +1,14 @@
+{
+  "console": [
+    "error: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "errors": [],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "Remove stage 4 and its loadings from all cases? Later stages will be renumbered.",
+      "policy": "accept"
+    }
+  ],
+  "toasts": []
+}

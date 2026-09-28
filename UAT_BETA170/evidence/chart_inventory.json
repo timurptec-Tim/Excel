@@ -1,0 +1,1060 @@
+{
+  "ctPrediction": {
+    "viewBox": "0 0 1280 455",
+    "polylines": [
+      {
+        "stroke": "#5b9c63",
+        "dash": null,
+        "n": 160,
+        "first": [
+          95.7,
+          261
+        ],
+        "last": [
+          754.4,
+          245.6
+        ],
+        "clip": "url(#rv67-ct-plot-clip)"
+      },
+      {
+        "stroke": "#c0443b",
+        "dash": null,
+        "n": 160,
+        "first": [
+          95.7,
+          345
+        ],
+        "last": [
+          754.4,
+          334.7
+        ],
+        "clip": "url(#rv67-ct-plot-clip)"
+      },
+      {
+        "stroke": "#c89d25",
+        "dash": null,
+        "n": 160,
+        "first": [
+          95.7,
+          154.4
+        ],
+        "last": [
+          754.4,
+          149.3
+        ],
+        "clip": "url(#rv67-ct-plot-clip)"
+      },
+      {
+        "stroke": "#294f83",
+        "dash": null,
+        "n": 160,
+        "first": [
+          95.7,
+          171.7
+        ],
+        "last": [
+          754.4,
+          117.8
+        ],
+        "clip": "url(#rv67-ct-plot-clip)"
+      }
+    ],
+    "legend": [
+      "BHP (psi)",
+      "Circulation Pressure (psi)",
+      "Frac Pressure",
+      "Injection Rate (BPM)"
+    ],
+    "texts": [
+      "CT K1 Base Case Prediction",
+      "22101 md ft",
+      "Pressure (psi)",
+      "Rate (bpm)",
+      "Cumulative Volume (bbl)"
+    ]
+  },
+  "bhPrediction": {
+    "viewBox": "0 0 1280 455",
+    "polylines": [
+      {
+        "stroke": "#C00000",
+        "dash": null,
+        "n": 150,
+        "first": [
+          97.5,
+          286.1
+        ],
+        "last": [
+          920,
+          294.1
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#BF9000",
+        "dash": null,
+        "n": 150,
+        "first": [
+          97.5,
+          368.8
+        ],
+        "last": [
+          920,
+          370.4
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#70AD47",
+        "dash": null,
+        "n": 30,
+        "first": [
+          97.5,
+          362.8
+        ],
+        "last": [
+          257.6,
+          362.8
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#70AD47",
+        "dash": null,
+        "n": 30,
+        "first": [
+          395.6,
+          360.8
+        ],
+        "last": [
+          555.7,
+          360.8
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#70AD47",
+        "dash": null,
+        "n": 42,
+        "first": [
+          693.7,
+          358.7
+        ],
+        "last": [
+          920,
+          358.7
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#7F7F7F",
+        "dash": null,
+        "n": 150,
+        "first": [
+          97.5,
+          229.5
+        ],
+        "last": [
+          920,
+          231.1
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#548235",
+        "dash": null,
+        "n": 150,
+        "first": [
+          97.5,
+          92.3
+        ],
+        "last": [
+          920,
+          92.3
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      },
+      {
+        "stroke": "#2F75B5",
+        "dash": null,
+        "n": 150,
+        "first": [
+          97.5,
+          117.8
+        ],
+        "last": [
+          920,
+          171.7
+        ],
+        "clip": "url(#rv68-bh-plot-clip-base)"
+      }
+    ],
+    "legend": [
+      "WHP, psi",
+      "dP",
+      "Target dP",
+      "BHP",
+      "Frac Pressure",
+      "Rate, bpm"
+    ],
+    "texts": [
+      "Bullhead K1 · Base Case",
+      "KL = 22101 md ft",
+      "Pressure (psi)",
+      "Rate (bpm)",
+      "Cumulative Volume (bbl)",
+      "125 ppt",
+      "0 ppt"
+    ]
+  },
+  "ctActual": {
+    "viewBox": "0 0 1240 470",
+    "polylines": [
+      {
+        "stroke": "#d83a32",
+        "dash": null,
+        "n": 1400,
+        "first": [
+          188,
+          264.9
+        ],
+        "last": [
+          1150,
+          264.9
+        ],
+        "clip": "url(#ctactual-plot-clip)"
+      },
+      {
+        "stroke": "#27853a",
+        "dash": null,
+        "n": 1400,
+        "first": [
+          188,
+          327
+        ],
+        "last": [
+          1150,
+          327
+        ],
+        "clip": "url(#ctactual-plot-clip)"
+      },
+      {
+        "stroke": "#111827",
+        "dash": null,
+        "n": 1437,
+        "first": [
+          188,
+          78.6
+        ],
+        "last": [
+          1150,
+          79.5
+        ],
+        "clip": "url(#ctactual-plot-clip)"
+      },
+      {
+        "stroke": "#c12dd1",
+        "dash": null,
+        "n": 1400,
+        "first": [
+          188,
+          396.2
+        ],
+        "last": [
+          1150,
+          396.2
+        ],
+        "clip": "url(#ctactual-plot-clip)"
+      },
+      {
+        "stroke": "#2459d6",
+        "dash": null,
+        "n": 1400,
+        "first": [
+          188,
+          398
+        ],
+        "last": [
+          1150,
+          398
+        ],
+        "clip": "url(#ctactual-plot-clip)"
+      },
+      {
+        "stroke": "#3c474c",
+        "dash": null,
+        "n": 1400,
+        "first": [
+          188,
+          385.4
+        ],
+        "last": [
+          1150,
+          70.6
+        ],
+        "clip": "url(#ctactual-plot-clip)"
+      }
+    ],
+    "legend": [
+      "Circulation Pressure",
+      "Wellhead Pressure",
+      "ANBHP",
+      "Filter DP",
+      "Slurry Rate",
+      "CT Depth"
+    ],
+    "texts": [
+      "CT 1 Sec · Pressure / Slurry Rate / CT Depth vs Time",
+      "CT Depth · ft",
+      "Pressure · psi",
+      "Slurry Rate · bbl/min",
+      "Time · hh:mm:ss"
+    ]
+  },
+  "bhActualTime": {
+    "viewBox": "0 0 1180 430",
+    "polylines": [
+      {
+        "stroke": "#d83a32",
+        "dash": null,
+        "n": 1413,
+        "first": [
+          92,
+          248.8
+        ],
+        "last": [
+          1088,
+          165.2
+        ],
+        "clip": "url(#bh-plot-clip-time)"
+      },
+      {
+        "stroke": "#d6bd22",
+        "dash": null,
+        "n": 1407,
+        "first": [
+          92,
+          349.7
+        ],
+        "last": [
+          1088,
+          349.7
+        ],
+        "clip": "url(#bh-plot-clip-time)"
+      },
+      {
+        "stroke": "#27853a",
+        "dash": null,
+        "n": 1413,
+        "first": [
+          92,
+          76.1
+        ],
+        "last": [
+          1088,
+          59.4
+        ],
+        "clip": "url(#bh-plot-clip-time)"
+      },
+      {
+        "stroke": "#c12dd1",
+        "dash": null,
+        "n": 1413,
+        "first": [
+          92,
+          359
+        ],
+        "last": [
+          1088,
+          342.3
+        ],
+        "clip": "url(#bh-plot-clip-time)"
+      },
+      {
+        "stroke": "#2459d6",
+        "dash": null,
+        "n": 1413,
+        "first": [
+          92,
+          329.2
+        ],
+        "last": [
+          1088,
+          143.3
+        ],
+        "clip": "url(#bh-plot-clip-time)"
+      }
+    ],
+    "legend": [
+      "Treating Pressure",
+      "Annulus Pressure",
+      "BH Pressure",
+      "Stim DP",
+      "Slurry Rate"
+    ],
+    "texts": [
+      "Pressure · psi",
+      "Slurry Rate · bbl/min",
+      "Time · hh:mm:ss"
+    ]
+  },
+  "bhActualVolume": {
+    "viewBox": "0 0 1180 430",
+    "polylines": [
+      {
+        "stroke": "#d83a32",
+        "dash": null,
+        "n": 1409,
+        "first": [
+          92,
+          248.8
+        ],
+        "last": [
+          1088,
+          165.2
+        ],
+        "clip": "url(#bh-plot-clip-volume)"
+      },
+      {
+        "stroke": "#d6bd22",
+        "dash": null,
+        "n": 1407,
+        "first": [
+          92,
+          349.7
+        ],
+        "last": [
+          1088,
+          349.7
+        ],
+        "clip": "url(#bh-plot-clip-volume)"
+      },
+      {
+        "stroke": "#27853a",
+        "dash": null,
+        "n": 1409,
+        "first": [
+          92,
+          76.1
+        ],
+        "last": [
+          1088,
+          59.4
+        ],
+        "clip": "url(#bh-plot-clip-volume)"
+      },
+      {
+        "stroke": "#c12dd1",
+        "dash": null,
+        "n": 1409,
+        "first": [
+          92,
+          359
+        ],
+        "last": [
+          1088,
+          342.3
+        ],
+        "clip": "url(#bh-plot-clip-volume)"
+      },
+      {
+        "stroke": "#2459d6",
+        "dash": null,
+        "n": 1409,
+        "first": [
+          92,
+          329.2
+        ],
+        "last": [
+          1088,
+          143.3
+        ],
+        "clip": "url(#bh-plot-clip-volume)"
+      }
+    ],
+    "legend": [
+      "Treating Pressure",
+      "Annulus Pressure",
+      "BH Pressure",
+      "Stim DP",
+      "Slurry Rate"
+    ],
+    "texts": [
+      "Pressure · psi",
+      "Slurry Rate · bbl/min",
+      "Volume · bbl"
+    ]
+  },
+  "ctMatch": {
+    "viewBox": "0 0 1280 520",
+    "polylines": [
+      {
+        "stroke": "#30255d",
+        "dash": null,
+        "n": 300,
+        "first": [
+          209.9,
+          314.6
+        ],
+        "last": [
+          775,
+          287.4
+        ],
+        "clip": "url(#ctm58-plot-clip)"
+      },
+      {
+        "stroke": "#8a6b1b",
+        "dash": null,
+        "n": 300,
+        "first": [
+          209.9,
+          105.3
+        ],
+        "last": [
+          775,
+          78.1
+        ],
+        "clip": "url(#ctm58-plot-clip)"
+      },
+      {
+        "stroke": "#c6322e",
+        "dash": "6 4",
+        "n": 2600,
+        "first": [
+          140.5,
+          232.7
+        ],
+        "last": [
+          1149.7,
+          232.7
+        ],
+        "clip": "url(#ctm58-plot-clip)"
+      },
+      {
+        "stroke": "#58a942",
+        "dash": null,
+        "n": 2600,
+        "first": [
+          140.5,
+          111.7
+        ],
+        "last": [
+          1149.7,
+          111.7
+        ],
+        "clip": "url(#ctm58-plot-clip)"
+      },
+      {
+        "stroke": "#2355a3",
+        "dash": null,
+        "n": 300,
+        "first": [
+          209.9,
+          199.3
+        ],
+        "last": [
+          775,
+          138.7
+        ],
+        "clip": "url(#ctm58-plot-clip)"
+      },
+      {
+        "stroke": "#d05a2d",
+        "dash": "5 4",
+        "n": 2600,
+        "first": [
+          140.5,
+          199.3
+        ],
+        "last": [
+          1149.7,
+          199.3
+        ],
+        "clip": "url(#ctm58-plot-clip)"
+      }
+    ],
+    "legend": [],
+    "texts": [
+      "CT Wash Match · NFQ22-4 · K1",
+      "Pressure (psi)",
+      "Rate (bpm)",
+      "Cumulative Volume (bbl)"
+    ]
+  },
+  "bhMatch": {
+    "viewBox": "0 0 1600 650",
+    "polylines": [
+      {
+        "stroke": "#8a342d",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          412.8
+        ],
+        "last": [
+          1422.2,
+          424.9
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#b1902e",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          536.8
+        ],
+        "last": [
+          1422.2,
+          539.1
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#7b416f",
+        "dash": null,
+        "n": 2800,
+        "first": [
+          113.9,
+          480.5
+        ],
+        "last": [
+          1448.5,
+          418.8
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#555b62",
+        "dash": null,
+        "n": 2800,
+        "first": [
+          113.9,
+          353.1
+        ],
+        "last": [
+          1448.5,
+          340.8
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#c026d3",
+        "dash": null,
+        "n": 2800,
+        "first": [
+          113.9,
+          561.8
+        ],
+        "last": [
+          1448.5,
+          549.5
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#111827",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          328.1
+        ],
+        "last": [
+          1422.2,
+          330.3
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#6b7f4c",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          122.4
+        ],
+        "last": [
+          1422.2,
+          122.4
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#355f98",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          160.7
+        ],
+        "last": [
+          1422.2,
+          241.3
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#d05a2d",
+        "dash": "5 4",
+        "n": 2800,
+        "first": [
+          113.9,
+          515.6
+        ],
+        "last": [
+          1448.5,
+          241.3
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      }
+    ],
+    "legend": [],
+    "texts": [
+      "Match Case 1 · NFQ22-4 · K1 · Base perm",
+      "Probe Res P 3450 psi",
+      "Pressure (psi)",
+      "Rate (bpm)",
+      "Cumulative Volume (bbl)",
+      "125 ppt",
+      "100 ppt"
+    ]
+  },
+  "bhApproved": {
+    "viewBox": "0 0 1600 650",
+    "polylines": [
+      {
+        "stroke": "#8a342d",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          412.8
+        ],
+        "last": [
+          1422.2,
+          424.9
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#b1902e",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          536.8
+        ],
+        "last": [
+          1422.2,
+          539.1
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#7b416f",
+        "dash": null,
+        "n": 2800,
+        "first": [
+          113.9,
+          480.5
+        ],
+        "last": [
+          1448.5,
+          418.8
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#555b62",
+        "dash": null,
+        "n": 2800,
+        "first": [
+          113.9,
+          353.1
+        ],
+        "last": [
+          1448.5,
+          340.8
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#c026d3",
+        "dash": null,
+        "n": 2800,
+        "first": [
+          113.9,
+          561.8
+        ],
+        "last": [
+          1448.5,
+          549.5
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#111827",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          328.1
+        ],
+        "last": [
+          1422.2,
+          330.3
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#6b7f4c",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          122.4
+        ],
+        "last": [
+          1422.2,
+          122.4
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#355f98",
+        "dash": null,
+        "n": 150,
+        "first": [
+          113.8,
+          160.7
+        ],
+        "last": [
+          1422.2,
+          241.3
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      },
+      {
+        "stroke": "#d05a2d",
+        "dash": "5 4",
+        "n": 2800,
+        "first": [
+          113.9,
+          515.6
+        ],
+        "last": [
+          1448.5,
+          241.3
+        ],
+        "clip": "url(#bhm59-plot-clip-bhm1)"
+      }
+    ],
+    "legend": [
+      "KM WHP",
+      "KM dP Sim",
+      "Actual TR PRESS",
+      "Actual BHP",
+      "Actual DP Stim",
+      "KM BHP",
+      "Frac Pressure",
+      "KM Rate",
+      "Actual Slurry Rate",
+      "StimDP Target"
+    ],
+    "texts": [
+      "Match Case 1 · NFQ22-4 · K1 · Base perm",
+      "Probe Res P 3450 psi",
+      "Pressure (psi)",
+      "Rate (bpm)",
+      "Cumulative Volume (bbl)",
+      "125 ppt",
+      "100 ppt"
+    ]
+  },
+  "ctMatchLegend": [
+    "KM WHP",
+    "KM BHP",
+    "Actual CIRC PRESS",
+    "Actual ANBHP",
+    "KM Rate",
+    "Actual Pump Rate"
+  ],
+  "chart1": {
+    "viewBox": "0 0 1200 350",
+    "polylines": [
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 11106,
+        "first": [
+          82,
+          101.4
+        ],
+        "last": [
+          962,
+          159.5
+        ],
+        "clip": null
+      },
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 11115,
+        "first": [
+          82,
+          261.3
+        ],
+        "last": [
+          962,
+          280
+        ],
+        "clip": null
+      }
+    ],
+    "legend": [],
+    "texts": [
+      "K1 - Permeability and Porosity",
+      "Measured Depth [ft]",
+      "Permeability [mD]",
+      "Porosity [%]",
+      "1e-3",
+      "1e+3",
+      "Perforation Summary",
+      "K1 = 1200.0 ft",
+      "Log Permeability (ELAN)",
+      "Porosity (ELAN Log)",
+      "K1 Perf"
+    ]
+  },
+  "chart2": {
+    "viewBox": "0 0 1200 350",
+    "polylines": [
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 11106,
+        "first": [
+          82,
+          101.4
+        ],
+        "last": [
+          1112,
+          159.5
+        ],
+        "clip": null
+      }
+    ],
+    "legend": [],
+    "texts": [
+      "Full Interval Permeability QAQC",
+      "Relative MD [ft]",
+      "Permeability [mD]",
+      "1e-3",
+      "1e+3",
+      "Perforation",
+      "Permeability"
+    ]
+  },
+  "chart3": {
+    "viewBox": "0 0 1200 350",
+    "polylines": [
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 1310,
+        "first": [
+          82,
+          184.9
+        ],
+        "last": [
+          203.3,
+          285.9
+        ],
+        "clip": null
+      },
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 2010,
+        "first": [
+          203.5,
+          285.9
+        ],
+        "last": [
+          389.6,
+          285.9
+        ],
+        "clip": null
+      },
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 2010,
+        "first": [
+          389.7,
+          285.9
+        ],
+        "last": [
+          575.8,
+          285.9
+        ],
+        "clip": null
+      },
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 2010,
+        "first": [
+          576,
+          285.9
+        ],
+        "last": [
+          762.1,
+          205.9
+        ],
+        "clip": null
+      },
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 2010,
+        "first": [
+          762.3,
+          211.3
+        ],
+        "last": [
+          948.4,
+          232.2
+        ],
+        "clip": null
+      },
+      {
+        "stroke": null,
+        "dash": null,
+        "n": 1765,
+        "first": [
+          948.6,
+          230.9
+        ],
+        "last": [
+          1112,
+          247.3
+        ],
+        "clip": null
+      }
+    ],
+    "legend": [],
+    "texts": [
+      "Porosity + Lithology Background",
+      "Relative MD [ft]",
+      "Porosity [%]",
+      "Dolomite",
+      "Limestone",
+      "Porosity (%)",
+      "Cut-off"
+    ]
+  }
+}

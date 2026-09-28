@@ -1,0 +1,7905 @@
+[
+ {
+  "at": "2026-09-28T18:29:28.705Z",
+  "id": "M1-probe-tvd-blank",
+  "area": "Pressure/M1",
+  "title": "probeTVD = \"\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "probe-tvd:Probe TVD is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored."
+   ]
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:30:00.450Z",
+  "id": "M1-probe-tvd-zero",
+  "area": "Pressure/M1",
+  "title": "probeTVD = \"0\"",
+  "expected": "accepted, no field message",
+  "actual": {
+   "committed": "0",
+   "msgs": [],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:30:32.153Z",
+  "id": "M1-probe-tvd-negative",
+  "area": "Pressure/M1",
+  "title": "probeTVD = \"-5\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "-5",
+   "msgs": [
+    "probe-tvd:Probe TVD must be zero or greater."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:31:03.817Z",
+  "id": "M1-probe-tvd-non-numeric",
+  "area": "Pressure/M1",
+  "title": "probeTVD = \"abc\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "probe-tvd:Probe TVD is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:31:35.428Z",
+  "id": "M1-probe-tvd-large finite",
+  "area": "Pressure/M1",
+  "title": "probeTVD = \"1e9\"",
+  "expected": "accepted, no field message",
+  "actual": {
+   "committed": "1e9",
+   "msgs": [],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:32:07.141Z",
+  "id": "M1-formation-pressure-blank",
+  "area": "Pressure/M1",
+  "title": "formationPressure = \"\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "formation-pressure:Formation pressure is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:32:38.881Z",
+  "id": "M1-formation-pressure-zero",
+  "area": "Pressure/M1",
+  "title": "formationPressure = \"0\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "0",
+   "msgs": [
+    "formation-pressure:Formation pressure must be greater than zero."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:33:10.621Z",
+  "id": "M1-formation-pressure-negative",
+  "area": "Pressure/M1",
+  "title": "formationPressure = \"-5\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "-5",
+   "msgs": [
+    "formation-pressure:Formation pressure must be greater than zero."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:33:42.338Z",
+  "id": "M1-formation-pressure-non-numeric",
+  "area": "Pressure/M1",
+  "title": "formationPressure = \"abc\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "formation-pressure:Formation pressure is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:34:14.056Z",
+  "id": "M1-formation-pressure-large finite",
+  "area": "Pressure/M1",
+  "title": "formationPressure = \"1e9\"",
+  "expected": "accepted, no field message",
+  "actual": {
+   "committed": "1e9",
+   "msgs": [],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:34:45.801Z",
+  "id": "M1-fg-tvdss-blank",
+  "area": "Pressure/M1",
+  "title": "fgTVDSS = \"\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "fg-tvdss:Fracture gradient is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:35:17.498Z",
+  "id": "M1-fg-tvdss-zero",
+  "area": "Pressure/M1",
+  "title": "fgTVDSS = \"0\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "0",
+   "msgs": [
+    "fg-tvdss:Fracture gradient must be greater than zero."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:35:49.201Z",
+  "id": "M1-fg-tvdss-negative",
+  "area": "Pressure/M1",
+  "title": "fgTVDSS = \"-5\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "-5",
+   "msgs": [
+    "fg-tvdss:Fracture gradient must be greater than zero."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:36:20.935Z",
+  "id": "M1-fg-tvdss-non-numeric",
+  "area": "Pressure/M1",
+  "title": "fgTVDSS = \"abc\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "fg-tvdss:Fracture gradient is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:36:52.667Z",
+  "id": "M1-fg-tvdss-large finite",
+  "area": "Pressure/M1",
+  "title": "fgTVDSS = \"1e9\"",
+  "expected": "accepted, no field message",
+  "actual": {
+   "committed": "1e9",
+   "msgs": [],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:37:24.328Z",
+  "id": "M1-fixed-conversion-blank",
+  "area": "Pressure/M1",
+  "title": "fixedConversion = \"\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "fixed-conversion:Pressure conversion is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:37:56.036Z",
+  "id": "M1-fixed-conversion-zero",
+  "area": "Pressure/M1",
+  "title": "fixedConversion = \"0\"",
+  "expected": "accepted, no field message",
+  "actual": {
+   "committed": "0",
+   "msgs": [],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:38:27.763Z",
+  "id": "M1-fixed-conversion-negative",
+  "area": "Pressure/M1",
+  "title": "fixedConversion = \"-5\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "-5",
+   "msgs": [
+    "fixed-conversion:Pressure conversion must be zero or greater."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:38:59.445Z",
+  "id": "M1-fixed-conversion-non-numeric",
+  "area": "Pressure/M1",
+  "title": "fixedConversion = \"abc\"",
+  "expected": "field message + KM Input copy blocked",
+  "actual": {
+   "committed": "",
+   "msgs": [
+    "fixed-conversion:Pressure conversion is required."
+   ],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Rescored: harness criterion required the pressure-specific KM Input message; app instead invalidates cases (generic \"No case tables yet\"), copy remains blocked and the field message is shown. Readiness rule satisfied."
+ },
+ {
+  "at": "2026-09-28T18:39:31.139Z",
+  "id": "M1-fixed-conversion-large finite",
+  "area": "Pressure/M1",
+  "title": "fixedConversion = \"1e9\"",
+  "expected": "accepted, no field message",
+  "actual": {
+   "committed": "1e9",
+   "msgs": [],
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM Modelling Control page.",
+   "clipBlocked": true,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:39:32.733Z",
+  "id": "M1-restore-after-invalid",
+  "area": "Pressure/M1",
+  "title": "All pressure fields returned to original values after invalid entries",
+  "expected": "casesGenerated + template restored; KM tables copyable",
+  "actual": {
+   "casesGenerated": true,
+   "template": true,
+   "export": true,
+   "kmEmpty": "",
+   "clipLen": 20
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:39:39.520Z",
+  "id": "M1-generate-invalid",
+  "area": "Pressure/M1",
+  "title": "KM Generate with blank formation pressure",
+  "expected": "no READY case sheets; template not assembled; reason shown",
+  "actual": {
+   "status": [
+    {
+     "summaryReady": true,
+     "caseSheetReady": false,
+     "reason": "Formation pressure is required."
+    },
+    {
+     "summaryReady": true,
+     "caseSheetReady": false,
+     "reason": "Formation pressure is required."
+    },
+    {
+     "summaryReady": true,
+     "caseSheetReady": false,
+     "reason": "Formation pressure is required."
+    },
+    {
+     "summaryReady": true,
+     "caseSheetReady": false,
+     "reason": "Formation pressure is required."
+    }
+   ],
+   "template": null,
+   "toasts": [
+    "Cases: Properties Summary refreshed for 4 case(s); dedicated Case sheets ready: 0; multiplier-skipped: 0. Formation pressure is required."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:39:39.520Z",
+  "id": "M1-export-invalid",
+  "area": "Pressure/M1",
+  "title": "Prediction audited export with blank formation pressure",
+  "expected": "blocked with pressure message",
+  "actual": {
+   "downloaded": false,
+   "toasts": [
+    "Formation pressure is required."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:39:44.601Z",
+  "id": "L5-equivalent-format",
+  "area": "Pressure/L5",
+  "title": "Re-enter 3450 as 3450.0",
+  "expected": "no invalidation",
+  "actual": {
+   "casesGenerated": true,
+   "banner": ""
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:40:16.214Z",
+  "id": "L5-3600-stale",
+  "area": "Pressure/L5",
+  "title": "3450 \u2192 3600 marks predictions stale and invalidates cases",
+  "expected": "banner (pressure) + cases/template cleared",
+  "actual": {
+   "banner": "PREDICTION REFRESH REQUIRED CT, Base Case, Case 3 \u00b7 pressure inputs changed. Replace the affected KM prediction table before final use.",
+   "casesGenerated": false,
+   "template": false,
+   "kmEmpty": "No case tables yet Define cases and click Generate on the KM",
+   "ctStale": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:40:17.970Z",
+  "id": "L5-3450-restore",
+  "area": "Pressure/L5",
+  "title": "3600 \u2192 3450 restores pre-change readiness without re-paste",
+  "expected": "banner cleared; cases/template/export status restored",
+  "actual": {
+   "banner": "",
+   "casesGenerated": true,
+   "template": true,
+   "steps": {
+    "refresh": true,
+    "generate": true,
+    "update": true,
+    "export": true
+   },
+   "sameAsBefore": true,
+   "kmCopied": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:40:19.763Z",
+  "id": "L5-reversal-after-multiplier",
+  "area": "Pressure/L5",
+  "title": "Pressure reversal after an intervening multiplier change",
+  "expected": "unrelated (KM) invalidation remains; cases not silently restored",
+  "actual": {
+   "banner": "PREDICTION REFRESH REQUIRED CT, Base Case, Case 3 \u00b7 pressure inputs changed. Replace the affected KM prediction table before final use.",
+   "casesGenerated": false,
+   "case3Stale": [
+    [
+     "base",
+     true,
+     "pressure inputs changed"
+    ],
+    [
+     "case3",
+     true,
+     "pressure inputs changed"
+    ]
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:40:27.782Z",
+  "id": "L5-preexisting-stale",
+  "area": "Pressure/L5",
+  "title": "Pre-existing Case 3 staleness survives a pressure change/reversal",
+  "expected": "Case 3 still stale (KM reason); Base/CT not stale",
+  "actual": {
+   "before": [
+    [
+     "base",
+     false
+    ],
+    [
+     "case3",
+     true
+    ]
+   ],
+   "after": [
+    [
+     "base",
+     false,
+     ""
+    ],
+    [
+     "case3",
+     true,
+     "KM case inputs changed"
+    ]
+   ],
+   "banner": "PREDICTION REFRESH REQUIRED Case 3 \u00b7 KM case inputs changed. Replace the affected KM prediction table before final use.",
+   "ctStale": false
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:40:27.782Z",
+  "id": "L5-reload-between",
+  "area": "Pressure/L5",
+  "title": "Reload between 3600 and reversal to 3450",
+  "expected": "cases/template restored after reload+reversal",
+  "actual": {
+   "casesGenerated": true,
+   "template": true,
+   "undoKept": false
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:43:44.760Z",
+  "id": "M2-snapshot-pressure",
+  "area": "Matching/M2",
+  "title": "Approve at 3450, change to 3600: snapshot keeps 3450",
+  "expected": "snapshot dP=BHP-3450, label 3450; working dP=BHP-3600; working labelled NOT APPROVED; explanation shown",
+  "actual": {
+   "base": {
+    "snap": {
+     "firstDp": 449.6,
+     "label": "Probe Res P 3450 psi"
+    },
+    "work": {
+     "firstDp": 449.6,
+     "label": "Probe Res P 3450 psi"
+    },
+    "head": "MATCHED OVERLAY Match Case 1 \u00b7 Base perm FINAL APPROVED \u00b7 +5.0 bbl \u00b7 CASE 1 ALIGNMENT"
+   },
+   "after": {
+    "snap": {
+     "firstDp": 449.6,
+     "label": "Probe Res P 3450 psi"
+    },
+    "work": {
+     "firstDp": 299.2,
+     "label": "Probe Res P 3600 psi"
+    },
+    "head": "MATCHED OVERLAY Match Case 1 \u00b7 Base perm WORKING \u00b7 NOT APPROVED \u00b7 +5.0 bbl \u00b7 CASE 1 ALIGNMENT",
+    "snapText": "APPROVED SNAPSHOT \u00b7 Probe pressure 3450 psi \u00b7 Current design pressure differs. Working plots below are not this approval. Re-approve explicitly to replace the saved snapshot.",
+    "badge": "FINAL APPROVED",
+    "tabs": [
+     "Match Case 1 150 KM rows loaded +5.0 bbl DESCRIPTOR ALIGNMENT SAVED KM READY"
+    ]
+   },
+   "statePressure": "3600",
+   "approvedP": 3450
+  },
+  "status": "PASS"
+ },
+ {
+  "id": "M2-export-after-change",
+  "area": "Matching/M2",
+  "title": "Matching export after 3450\u21923600",
+  "expected": "current 3600 vs approved 3450 distinguished; image at 3450",
+  "actual": "Summary rows 3600/3450; image Probe Res P 3450",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "at": "2026-09-28T18:43:52.743Z",
+  "id": "M2-no-implicit-reapproval",
+  "area": "Matching/M2",
+  "title": "No implicit re-approval after pressure change",
+  "expected": "approved.reservoirPressure stays 3450 until explicit approve",
+  "actual": 3450,
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:43:53.413Z",
+  "id": "M2-explicit-reapproval",
+  "area": "Matching/M2",
+  "title": "Explicit re-approval at 3600 replaces snapshot",
+  "expected": "approved pressure 3600, no \"differs\" note",
+  "actual": {
+   "p": 3600,
+   "snapTxt": "APPROVED SNAPSHOT \u00b7 Probe pressure 3600 psi"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:00.260Z",
+  "id": "M2-render-failure-restore",
+  "area": "Matching/M2",
+  "title": "Snapshot render failure (injected corrupt actualRows)",
+  "expected": "working pressure/axes/stageInputs unchanged (3600), error contained",
+  "actual": {
+   "pressure": "3600",
+   "axes": {
+    "xMin": null,
+    "xMax": null,
+    "pMin": null,
+    "pMax": null,
+    "rMin": null,
+    "rMax": null
+   },
+   "pageErrors": [
+    "TypeError: Cannot read properties of null (reading 'slur')\n    at x (http://localhost:8170/app.html:13363:94)\n    at http://localhost:8170/app.html:12904:171\n  "
+   ],
+   "exportBtnTitle": "Export CT + 1 Bullheading case matching data"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:03.579Z",
+  "id": "L2-controls-disabled",
+  "area": "Matching/L2",
+  "title": "Saved CT alignment disables slider/number/nudges/reset",
+  "expected": "all disabled",
+  "actual": [
+   [
+    "ctm58-shift-range",
+    true
+   ],
+   [
+    "ctm58-shift-number",
+    true
+   ],
+   [
+    "ctm58-shift-reset",
+    true
+   ],
+   [
+    "nudge-10",
+    true
+   ],
+   [
+    "nudge-1",
+    true
+   ],
+   [
+    "nudge1",
+    true
+   ],
+   [
+    "nudge10",
+    true
+   ]
+  ],
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:03.750Z",
+  "id": "L2-forced-input-ignored",
+  "area": "Matching/L2",
+  "title": "Scripted input event on locked shift box",
+  "expected": "shift unchanged -12.5, lock kept",
+  "actual": {
+   "shift": -12.5,
+   "locked": true,
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "Click Edit saved alignment before changing the CT shift."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:04.182Z",
+  "id": "L2-unlock-cancel",
+  "area": "Matching/L2",
+  "title": "Cancel \"Edit saved alignment\" confirmation",
+  "expected": "match stays locked",
+  "actual": {
+   "locked": true,
+   "dialog": [
+    {
+     "type": "confirm",
+     "message": "Unlock the saved CT alignment for editing?",
+     "policy": "dismiss"
+    }
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:04.627Z",
+  "id": "L2-unlock-confirm",
+  "area": "Matching/L2",
+  "title": "Confirm unlock",
+  "expected": "unlocked, shift kept; CT excluded from export readiness",
+  "actual": {
+   "locked": false,
+   "shift": -12.5,
+   "exportTitle": "Export 1 Bullheading case matching data"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:05.017Z",
+  "id": "L2-unchanged-shift",
+  "area": "Matching/L2",
+  "title": "Entering the same shift value",
+  "expected": "no change",
+  "actual": {
+   "shift": -1.05,
+   "locked": false
+  },
+  "status": "FAIL",
+  "note": "Root cause D-01 (CT shift number box rewrites value on each keystroke)"
+ },
+ {
+  "at": "2026-09-28T18:44:38.389Z",
+  "id": "L2-resave-persist",
+  "area": "Matching/L2",
+  "title": "Save new shift and reload",
+  "expected": "locked -8.3 after reload",
+  "actual": {
+   "shift": -8.03,
+   "locked": true
+  },
+  "status": "FAIL",
+  "note": "Root cause D-01 (CT shift number box rewrites value on each keystroke)"
+ },
+ {
+  "at": "2026-09-28T18:44:40.055Z",
+  "id": "L2-new-km-table-unlocks",
+  "area": "Matching/L2",
+  "title": "Re-pasting CT KM output while a match is saved",
+  "expected": "REQUIREMENT CLARIFICATION: saved match should not change without explicit action",
+  "actual": {
+   "locked": false,
+   "shift": -8.03,
+   "dialogs": [
+    {
+     "type": "confirm",
+     "message": "Unlock the saved CT alignment for editing?",
+     "policy": "accept"
+    }
+   ],
+   "toasts": [
+    "300 CT KM output rows loaded."
+   ]
+  },
+  "status": "REQUIREMENT CLARIFICATION"
+ },
+ {
+  "at": "2026-09-28T18:44:46.139Z",
+  "id": "BHM-samecount-changed",
+  "area": "Matching/BH",
+  "title": "Replace Case 1 KM data with same row count, different BHP",
+  "expected": "working plot not labelled approved; approval snapshot preserved",
+  "actual": {
+   "head": "MATCHED OVERLAY Match Case 1 \u00b7 Base perm WORKING \u00b7 NOT APPROVED \u00b7 +5.0 bbl \u00b7 CASE 1 ALIGNMENT",
+   "badge": "FINAL APPROVED",
+   "tab": "Match Case 1 150 KM rows loaded +5.0 bbl DESCRIPTOR ALIGNMENT SAVED KM READY"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:44:48.007Z",
+  "id": "BHM-case2-shared-alignment",
+  "area": "Matching/BH",
+  "title": "Match Case 2 inherits Case 1 alignment/stages; approval replaced by Case 2",
+  "expected": "Case 2 controls read-only; approval replaced with Case 2 at shared shift",
+  "actual": {
+   "dis2": {
+    "num": true,
+    "save": "USES CASE 1 ALIGNMENT",
+    "fib": true
+   },
+   "approved": [
+    "Match Case 2",
+    5
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:45:15.040Z",
+  "id": "D-CT-SHIFT-TYPING-run1",
+  "area": "Matching/L2",
+  "title": "Type \"-8.3\" into CT shift number box (unlocked)",
+  "expected": "shift = -8.3",
+  "actual": {
+   "final": -8.03,
+   "trace": [
+    [
+     "-",
+     "",
+     -12.5
+    ],
+    [
+     "8",
+     "-8.0",
+     -8
+    ],
+    [
+     ".",
+     "-8.0",
+     -8
+    ],
+    [
+     "3",
+     "-8.0",
+     -8.03
+    ]
+   ],
+   "bhSameInput": -8.3
+  },
+  "status": "FAIL"
+ },
+ {
+  "at": "2026-09-28T18:45:21.261Z",
+  "id": "D-CT-SHIFT-TYPING-run2",
+  "area": "Matching/L2",
+  "title": "Type \"-8.3\" into CT shift number box (unlocked)",
+  "expected": "shift = -8.3",
+  "actual": {
+   "final": -8.03,
+   "trace": [
+    [
+     "-",
+     "",
+     -12.5
+    ],
+    [
+     "8",
+     "-8.0",
+     -8
+    ],
+    [
+     ".",
+     "-8.0",
+     -8
+    ],
+    [
+     "3",
+     "-8.0",
+     -8.03
+    ]
+   ],
+   "bhSameInput": -8.3
+  },
+  "status": "FAIL"
+ },
+ {
+  "at": "2026-09-28T18:46:07.342Z",
+  "id": "AN-units-A_unformatted_fraction-auto",
+  "area": "Analogue/units",
+  "title": "A_unformatted_fraction in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Inferred once from unformatted column values (fraction)",
+    "dolomitePct": "Inferred once from unformatted column values (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:08.428Z",
+  "id": "AN-units-A_unformatted_fraction-fraction",
+  "area": "Analogue/units",
+  "title": "A_unformatted_fraction in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:09.520Z",
+  "id": "AN-units-A_unformatted_fraction-percent",
+  "area": "Analogue/units",
+  "title": "A_unformatted_fraction in percent mode",
+  "expected": [
+   0.35,
+   0.65
+  ],
+  "actual": {
+   "got": [
+    0.35,
+    0.65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     0.35,
+     0.65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:10.615Z",
+  "id": "AN-units-B_unformatted_percent-auto",
+  "area": "Analogue/units",
+  "title": "B_unformatted_percent in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Inferred once from unformatted column values (percent)",
+    "dolomitePct": "Inferred once from unformatted column values (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:11.699Z",
+  "id": "AN-units-B_unformatted_percent-fraction",
+  "area": "Analogue/units",
+  "title": "B_unformatted_percent in fraction mode",
+  "expected": [
+   3500,
+   6500
+  ],
+  "actual": {
+   "got": [
+    3500,
+    6500
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     3500,
+     6500
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:12.776Z",
+  "id": "AN-units-B_unformatted_percent-percent",
+  "area": "Analogue/units",
+  "title": "B_unformatted_percent in percent mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:13.907Z",
+  "id": "AN-units-C_mixed_column-auto",
+  "area": "Analogue/units",
+  "title": "C_mixed_column in auto mode",
+  "expected": [
+   0.35,
+   0.65
+  ],
+  "actual": {
+   "got": [
+    0.35,
+    0.65
+   ],
+   "evidence": {
+    "limestonePct": "Inferred once from unformatted column values (percent)",
+    "dolomitePct": "Inferred once from unformatted column values (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     0.35,
+     0.65
+    ],
+    [
+     "W1-2",
+     40,
+     60
+    ]
+   ],
+   "note": "2 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:14.966Z",
+  "id": "AN-units-C_mixed_column-fraction",
+  "area": "Analogue/units",
+  "title": "C_mixed_column in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ],
+    [
+     "W1-2",
+     4000,
+     6000
+    ]
+   ],
+   "note": "2 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:16.008Z",
+  "id": "AN-units-C_mixed_column-percent",
+  "area": "Analogue/units",
+  "title": "C_mixed_column in percent mode",
+  "expected": [
+   0.35,
+   0.65
+  ],
+  "actual": {
+   "got": [
+    0.35,
+    0.65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     0.35,
+     0.65
+    ],
+    [
+     "W1-2",
+     40,
+     60
+    ]
+   ],
+   "note": "2 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:17.074Z",
+  "id": "AN-units-D_column_style_percent-auto",
+  "area": "Analogue/units",
+  "title": "D_column_style_percent in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:18.153Z",
+  "id": "AN-units-D_column_style_percent-fraction",
+  "area": "Analogue/units",
+  "title": "D_column_style_percent in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:19.188Z",
+  "id": "AN-units-D_column_style_percent-percent",
+  "area": "Analogue/units",
+  "title": "D_column_style_percent in percent mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:20.219Z",
+  "id": "AN-units-E_row_style_percent-auto",
+  "area": "Analogue/units",
+  "title": "E_row_style_percent in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:21.271Z",
+  "id": "AN-units-E_row_style_percent-fraction",
+  "area": "Analogue/units",
+  "title": "E_row_style_percent in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:22.313Z",
+  "id": "AN-units-E_row_style_percent-percent",
+  "area": "Analogue/units",
+  "title": "E_row_style_percent in percent mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:23.374Z",
+  "id": "AN-units-F_cell_overrides_column-auto",
+  "area": "Analogue/units",
+  "title": "F_cell_overrides_column in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Inferred once from unformatted column values (fraction)",
+    "dolomitePct": "Inferred once from unformatted column values (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:24.417Z",
+  "id": "AN-units-F_cell_overrides_column-fraction",
+  "area": "Analogue/units",
+  "title": "F_cell_overrides_column in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:25.472Z",
+  "id": "AN-units-F_cell_overrides_column-percent",
+  "area": "Analogue/units",
+  "title": "F_cell_overrides_column in percent mode",
+  "expected": [
+   0.35,
+   0.65
+  ],
+  "actual": {
+   "got": [
+    0.35,
+    0.65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     0.35,
+     0.65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:26.520Z",
+  "id": "AN-units-G_text_percent-auto",
+  "area": "Analogue/units",
+  "title": "G_text_percent in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Explicit percent text",
+    "dolomitePct": "Explicit percent text"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:27.591Z",
+  "id": "AN-units-G_text_percent-fraction",
+  "area": "Analogue/units",
+  "title": "G_text_percent in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Explicit percent text",
+    "dolomitePct": "Explicit percent text"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:28.652Z",
+  "id": "AN-units-G_text_percent-percent",
+  "area": "Analogue/units",
+  "title": "G_text_percent in percent mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Explicit percent text",
+    "dolomitePct": "Explicit percent text"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:29.722Z",
+  "id": "AN-units-H_literal_pct_numfmt-auto",
+  "area": "Analogue/units",
+  "title": "H_literal_pct_numfmt in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Inferred once from unformatted column values (percent)",
+    "dolomitePct": "Inferred once from unformatted column values (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:30.791Z",
+  "id": "AN-units-H_literal_pct_numfmt-fraction",
+  "area": "Analogue/units",
+  "title": "H_literal_pct_numfmt in fraction mode",
+  "expected": [
+   3500,
+   6500
+  ],
+  "actual": {
+   "got": [
+    3500,
+    6500
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     3500,
+     6500
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:31.871Z",
+  "id": "AN-units-H_literal_pct_numfmt-percent",
+  "area": "Analogue/units",
+  "title": "H_literal_pct_numfmt in percent mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:32.915Z",
+  "id": "AN-units-I_header_fraction-auto",
+  "area": "Analogue/units",
+  "title": "I_header_fraction in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Column header declares fraction (fraction)",
+    "dolomitePct": "Column header declares fraction (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:33.981Z",
+  "id": "AN-units-I_header_fraction-fraction",
+  "area": "Analogue/units",
+  "title": "I_header_fraction in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:35.025Z",
+  "id": "AN-units-I_header_fraction-percent",
+  "area": "Analogue/units",
+  "title": "I_header_fraction in percent mode",
+  "expected": [
+   0.35,
+   0.65
+  ],
+  "actual": {
+   "got": [
+    0.35,
+    0.65
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     0.35,
+     0.65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:36.095Z",
+  "id": "AN-units-J_excel_pct_65-auto",
+  "area": "Analogue/units",
+  "title": "J_excel_pct_65 in auto mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:37.154Z",
+  "id": "AN-units-J_excel_pct_65-fraction",
+  "area": "Analogue/units",
+  "title": "J_excel_pct_65 in fraction mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:38.221Z",
+  "id": "AN-units-J_excel_pct_65-percent",
+  "area": "Analogue/units",
+  "title": "J_excel_pct_65 in percent mode",
+  "expected": [
+   35,
+   65
+  ],
+  "actual": {
+   "got": [
+    35,
+    65
+   ],
+   "evidence": {
+    "limestonePct": "Excel percentage format",
+    "dolomitePct": "Excel percentage format"
+   },
+   "rows": [
+    [
+     "W1-1",
+     35,
+     65
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:39.300Z",
+  "id": "AN-units-K_total_not_100-auto",
+  "area": "Analogue/units",
+  "title": "K_total_not_100 in auto mode",
+  "expected": [
+   30,
+   60
+  ],
+  "actual": {
+   "got": [
+    30,
+    60
+   ],
+   "evidence": {
+    "limestonePct": "Inferred once from unformatted column values (percent)",
+    "dolomitePct": "Inferred once from unformatted column values (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     30,
+     60
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: auto"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:40.377Z",
+  "id": "AN-units-K_total_not_100-fraction",
+  "area": "Analogue/units",
+  "title": "K_total_not_100 in fraction mode",
+  "expected": [
+   3000,
+   6000
+  ],
+  "actual": {
+   "got": [
+    3000,
+    6000
+   ],
+   "evidence": {
+    "limestonePct": "User-selected fraction for unformatted cells (fraction)",
+    "dolomitePct": "User-selected fraction for unformatted cells (fraction)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     3000,
+     6000
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: fraction"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:41.449Z",
+  "id": "AN-units-K_total_not_100-percent",
+  "area": "Analogue/units",
+  "title": "K_total_not_100 in percent mode",
+  "expected": [
+   30,
+   60
+  ],
+  "actual": {
+   "got": [
+    30,
+    60
+   ],
+   "evidence": {
+    "limestonePct": "User-selected percent for unformatted cells (percent)",
+    "dolomitePct": "User-selected percent for unformatted cells (percent)"
+   },
+   "rows": [
+    [
+     "W1-1",
+     30,
+     60
+    ]
+   ],
+   "note": "1 rows \u00b7 DB \u00b7 header row 1 \u00b7 lithology stored as percent \u00b7 import: percent"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:43.592Z",
+  "id": "AN-bad-analogue_wrong_headers.xlsx",
+  "area": "Analogue/import",
+  "title": "Import analogue_wrong_headers.xlsx over a connected DB",
+  "expected": "rejected with message; previous 10-row DB retained",
+  "actual": {
+   "n": 10,
+   "note": "Import rejected: Could not find an analogue database table in this workbook. Expected headers such as Well, Formation, Limestone %, Dolomite %, MD KH after match and MD perf. Previous database retained (10 rows).",
+   "toasts": [
+    "Couldn't load analogue workbook: Could not find an analogue database table in this workbook. Expected headers such as Well, Formation, Limestone %, Dolomite %, MD KH after match and MD perf."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:44.667Z",
+  "id": "AN-bad-analogue_empty.xlsx",
+  "area": "Analogue/import",
+  "title": "Import analogue_empty.xlsx over a connected DB",
+  "expected": "rejected with message; previous 10-row DB retained",
+  "actual": {
+   "n": 10,
+   "note": "Import rejected: End of data reached (data length = 0, asked index = 4). Corrupted zip ? Previous database retained (10 rows).",
+   "toasts": [
+    "Couldn't load analogue workbook: End of data reached (data length = 0, asked index = 4). Corrupted zip ?"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:45.726Z",
+  "id": "AN-bad-analogue_not_zip.xlsx",
+  "area": "Analogue/import",
+  "title": "Import analogue_not_zip.xlsx over a connected DB",
+  "expected": "rejected with message; previous 10-row DB retained",
+  "actual": {
+   "n": 10,
+   "note": "Import rejected: Can't find end of central directory : is this a zip file ? If it is, see https://stuk.github.io/jszip/documentation/howto/read_zip.html Previous database retained (10 rows).",
+   "toasts": [
+    "Couldn't load analogue workbook: Can't find end of central directory : is this a zip file ? If it is, see https://stuk.github.io/jszip/documentation/howto/read_zip.html"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:46.812Z",
+  "id": "AN-bad-analogue_header_only.xlsx",
+  "area": "Analogue/import",
+  "title": "Import analogue_header_only.xlsx over a connected DB",
+  "expected": "rejected with message; previous 10-row DB retained",
+  "actual": {
+   "n": 10,
+   "note": "Import rejected: The analogue table was detected, but no populated well rows were found below its header. Previous database retained (10 rows).",
+   "toasts": [
+    "Couldn't load analogue workbook: The analogue table was detected, but no populated well rows were found below its header."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:46:47.469Z",
+  "id": "AN-cancel",
+  "area": "Analogue/import",
+  "title": "Cancel file chooser",
+  "expected": "no change",
+  "actual": {
+   "n": 10,
+   "toasts": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:47:00.010Z",
+  "id": "AN-concurrency-newest-wins",
+  "area": "Analogue/concurrency",
+  "title": "Older slow upload then newer small upload (reverse completion)",
+  "expected": "newest (1 row) wins",
+  "actual": {
+   "n": 1,
+   "file": "analogue_J_excel_pct_65.xlsx",
+   "toasts": [
+    "1 analogue row(s) loaded from \"analogue_J_excel_pct_65.xlsx\" \u00b7 DB."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:47:22.909Z",
+  "id": "AN-concurrency-ressum",
+  "area": "Analogue/concurrency",
+  "title": "Analogue upload followed by RESSUM upload",
+  "expected": "RESSUM does not cancel analogue; both complete",
+  "actual": {
+   "analogueRows": 1,
+   "file": "analogue_J_excel_pct_65.xlsx",
+   "modelRows": 24000,
+   "toasts": [
+    "Browser storage is unavailable or full. Current calculations still work, but this session may not persist after closing the browser.",
+    "40000 analogue row(s) loaded from \"analogue_big_40000.xlsx\" \u00b7 DB.",
+    "\"RESSUM_synthetic_24000.xlsx\" loaded \u2014 24000 ELAN rows prepared with TVD = TVDSS + RKB."
+   ]
+  },
+  "status": "PASS",
+  "note": "Rescored: in-memory import completed (toast \"40000 analogue row(s) loaded\") and RESSUM loaded; localStorage snapshot lagged because the save failed (quota). Storage failure recorded separately as STOR-analogue-quota."
+ },
+ {
+  "at": "2026-09-28T18:47:40.434Z",
+  "id": "AN-job-switch-pending",
+  "area": "Analogue/concurrency",
+  "title": "Switch to new job while analogue import pending",
+  "expected": "pending import does not enter new job",
+  "actual": {
+   "well": "NFQ22-9",
+   "analogueRows": 0,
+   "dialogs": [
+    {
+     "type": "confirm",
+     "message": "Changing Well, Project or Segment starts a new clean job and clears the previous job data from this browser. Continue?",
+     "policy": "accept"
+    }
+   ],
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:47:43.256Z",
+  "id": "AN-error-notice-isolation",
+  "area": "Analogue/concurrency",
+  "title": "Import error then open another job",
+  "expected": "error notice not shown in new job",
+  "actual": {
+   "n1": "Import rejected: Can't find end of central directory : is this a zip file ? If it is, see https://stuk.github.io/jszip/documentation/howto/read_zip.html",
+   "n2": "Select the company analogue-wells Excel workbook."
+  },
+  "status": "PASS"
+ },
+ {
+  "id": "STOR-analogue-quota",
+  "area": "Persistence",
+  "title": "40,000-row analogue DB persisted in localStorage",
+  "expected": "job state persists",
+  "actual": {
+   "analogueRows": 1,
+   "file": "analogue_J_excel_pct_65.xlsx",
+   "modelRows": 24000,
+   "toasts": [
+    "Browser storage is unavailable or full. Current calculations still work, but this session may not persist after closing the browser.",
+    "40000 analogue row(s) loaded from \"analogue_big_40000.xlsx\" \u00b7 DB.",
+    "\"RESSUM_synthetic_24000.xlsx\" loaded \u2014 24000 ELAN rows prepared with TVD = TVDSS + RKB."
+   ]
+  },
+  "status": "FAIL",
+  "note": "saveState throws QuotaExceeded; SAVE WARNING bar + toast shown; subsequent saves also fail while the large DB is in state"
+ },
+ {
+  "at": "2026-09-28T18:48:48.182Z",
+  "id": "AN-rank-none",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: none",
+  "expected": [],
+  "actual": {
+   "got": [],
+   "cards": [],
+   "highlighted": [],
+   "toasts": [
+    "No complete analogue database rows match Formation K1 and the required MD KH fields."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:49.634Z",
+  "id": "AN-rank-one",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: one",
+  "expected": [
+   [
+    3,
+    0,
+    2
+   ]
+  ],
+  "actual": {
+   "got": [
+    [
+     3,
+     0,
+     2
+    ]
+   ],
+   "cards": [
+    "NFQ22-1"
+   ],
+   "highlighted": [
+    0
+   ],
+   "toasts": [
+    "1 candidate case(s) selected \u00b7 same platform NFQ22 \u00b7 no credible LOW/HIGH bracket."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:51.071Z",
+  "id": "AN-rank-two",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: two",
+  "expected": [
+   [
+    2,
+    1,
+    1.5
+   ],
+   [
+    3,
+    0,
+    2
+   ]
+  ],
+  "actual": {
+   "got": [
+    [
+     2,
+     1,
+     1.5
+    ],
+    [
+     3,
+     0,
+     2
+    ]
+   ],
+   "cards": [
+    "NFQ22-2",
+    "NFQ22-1"
+   ],
+   "highlighted": [
+    0,
+    1
+   ],
+   "toasts": [
+    "2 candidate case(s) selected \u00b7 same platform NFQ22 \u00b7 no credible HIGH bracket."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:52.502Z",
+  "id": "AN-rank-exact_tie",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: exact_tie",
+  "expected": [
+   [
+    2,
+    2,
+    1
+   ],
+   [
+    3,
+    0,
+    2
+   ],
+   [
+    4,
+    3,
+    3
+   ]
+  ],
+  "actual": {
+   "got": [
+    [
+     2,
+     2,
+     1
+    ],
+    [
+     3,
+     0,
+     2
+    ],
+    [
+     4,
+     3,
+     3
+    ]
+   ],
+   "cards": [
+    "NFQ22-3",
+    "NFQ22-1",
+    "NFQ22-5"
+   ],
+   "highlighted": [
+    0,
+    2,
+    3
+   ],
+   "toasts": [
+    "3 candidate case(s) selected \u00b7 same platform NFQ22."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:53.988Z",
+  "id": "AN-rank-dup_names",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: dup_names",
+  "expected": [
+   [
+    2,
+    1,
+    1.1
+   ],
+   [
+    3,
+    0,
+    2
+   ],
+   [
+    4,
+    2,
+    2.9
+   ]
+  ],
+  "actual": {
+   "got": [
+    [
+     2,
+     1,
+     1.1
+    ],
+    [
+     3,
+     0,
+     2
+    ],
+    [
+     4,
+     2,
+     2.9
+    ]
+   ],
+   "cards": [
+    "NFQ22-1",
+    "NFQ22-1",
+    "NFQ22-1"
+   ],
+   "highlighted": [
+    0,
+    1,
+    2
+   ],
+   "toasts": [
+    "3 candidate case(s) selected \u00b7 same platform NFQ22."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:55.395Z",
+  "id": "AN-rank-other_platform_only",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: other_platform_only",
+  "expected": [
+   [
+    2,
+    1,
+    1.5
+   ],
+   [
+    3,
+    0,
+    2
+   ],
+   [
+    4,
+    2,
+    2.5
+   ]
+  ],
+  "actual": {
+   "got": [
+    [
+     2,
+     1,
+     1.5
+    ],
+    [
+     3,
+     0,
+     2
+    ],
+    [
+     4,
+     2,
+     2.5
+    ]
+   ],
+   "cards": [
+    "NFQ30-2",
+    "NFQ23-1",
+    "NFQ31-1"
+   ],
+   "highlighted": [
+    0,
+    1,
+    2
+   ],
+   "toasts": [
+    "3 candidate case(s) selected \u00b7 all platforms."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:56.824Z",
+  "id": "AN-rank-low_not_credible",
+  "area": "Analogue/ranking",
+  "title": "Best-three selection: low_not_credible",
+  "expected": [
+   [
+    3,
+    0,
+    2
+   ],
+   [
+    4,
+    2,
+    2.5
+   ]
+  ],
+  "actual": {
+   "got": [
+    [
+     3,
+     0,
+     2
+    ],
+    [
+     4,
+     2,
+     2.5
+    ]
+   ],
+   "cards": [
+    "NFQ22-1",
+    "NFQ22-3"
+   ],
+   "highlighted": [
+    0,
+    2
+   ],
+   "toasts": [
+    "2 candidate case(s) selected \u00b7 same platform NFQ22 \u00b7 no credible LOW bracket."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:59.173Z",
+  "id": "AN-manual-edits",
+  "area": "Analogue/ranking",
+  "title": "Blank Case-2 multiplier + zero Case-4 multiplier then transfer",
+  "expected": "Case 2 keeps existing (incomplete), Case 3 = 1.99995\u2026, Case 4 = 0 (zero allowed)",
+  "actual": {
+   "kmCases": [
+    [
+     "1.00",
+     "1.00"
+    ],
+    [
+     "1.19997304467",
+     "1.19997304467"
+    ],
+    [
+     "1.99995507446",
+     "1.99995507446"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ],
+   "transferDisabledAfterBlank": false,
+   "toasts": [
+    "3 candidate case(s) selected \u00b7 same platform NFQ22.",
+    "VBA Transfer Cases mapping applied. Slots with no candidate were cleared; incomplete edited candidates kept their existing multipliers. NFQ22-1\u2192Case 3, NFQ22-5\u2192Case 4. Case 1 values were preserved; only blank Case 1 cells defaulted to 1.00\u00d7."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:48:59.653Z",
+  "id": "AN-rename-same-platform",
+  "area": "Analogue/ranking",
+  "title": "Rename NFQ22-4 \u2192 NFQ22-9",
+  "expected": "suggestions kept; datasets linked",
+  "actual": {
+   "n": 3,
+   "well": "NFQ22-9",
+   "toasts": [
+    "Well name saved. All datasets remain linked to this well."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:49:00.129Z",
+  "id": "AN-rename-other-platform",
+  "area": "Analogue/ranking",
+  "title": "Rename to other platform NFQ30-4",
+  "expected": "suggestions cleared, prompt to reselect; case inputs kept",
+  "actual": {
+   "n": 0,
+   "sugg": "Connect the analogue workbook, then click Select Cases.",
+   "kmCase3": "1.99995507446",
+   "toasts": [
+    "Well name saved. Platform changed: click Select Cases again. Existing case inputs were kept."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:49:00.593Z",
+  "id": "AN-other-platform-fallback",
+  "area": "Analogue/ranking",
+  "title": "NFQ30-4 has only one same-platform (NFQ30-2) candidate",
+  "expected": "same-platform pool (NFQ30-2) only \u2192 BEST only",
+  "actual": [
+   [
+    3,
+    "NFQ30-2",
+    true
+   ]
+  ],
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:49:03.040Z",
+  "id": "PERS-rename-reload",
+  "area": "Persistence",
+  "title": "Reload after header rename",
+  "expected": "well name kept; RESSUM/raw data still restored",
+  "actual": {
+   "well": "NFQ30-4",
+   "modelRows": 24000,
+   "toasts": [],
+   "rows": "24000"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:49:50.889Z",
+  "id": "L4-CT-actual",
+  "area": "Charts/L4",
+  "title": "Pressure-axis validation: CT actual",
+  "expected": "valid applied; min=max and min>max rejected with message and prior range kept; negative, small range, reload and auto-reset honoured; inputs = plotted endpoints",
+  "actual": {
+   "initial": {
+    "inputs": [
+     "0",
+     "3832.5"
+    ],
+    "ticks": [
+     0,
+     479,
+     958,
+     1437,
+     1916,
+     2395,
+     2874,
+     3353,
+     3833,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   },
+   "valid": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   },
+   "equal": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ],
+    "toasts": [
+     "2 locally saved CT/Bullheading raw datasets restored.",
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "greater": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "negative": {
+    "inputs": [
+     "-500",
+     "5000"
+    ],
+    "ticks": [
+     -500,
+     188,
+     875,
+     1563,
+     2250,
+     2938,
+     3625,
+     4313,
+     5000,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   },
+   "blankMax": {
+    "inputs": [
+     "-500",
+     "3832.5"
+    ],
+    "ticks": [
+     -500,
+     42,
+     583,
+     1125,
+     1666,
+     2208,
+     2749,
+     3291,
+     3833,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   },
+   "small": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3001,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   },
+   "afterReload": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3000,
+     3001,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   },
+   "auto": {
+    "inputs": [
+     "0",
+     "3832.5"
+    ],
+    "ticks": [
+     0,
+     479,
+     958,
+     1437,
+     1916,
+     2395,
+     2874,
+     3353,
+     3833,
+     10980,
+     11115,
+     11250,
+     11385,
+     11520
+    ]
+   }
+  },
+  "status": "PASS",
+  "note": "Rescored: harness tick parser included CT-depth axis labels. Pressure inputs, rejection messages, reload and auto-reset behave correctly. Separate display finding: pressure tick labels use 0 dp (3000\u20133000.5 psi shows 3000\u20263001)."
+ },
+ {
+  "at": "2026-09-28T18:49:56.502Z",
+  "id": "L4-BH-actual",
+  "area": "Charts/L4",
+  "title": "Pressure-axis validation: BH actual",
+  "expected": "valid applied; min=max and min>max rejected with message and prior range kept; negative, small range, reload and auto-reset honoured; inputs = plotted endpoints",
+  "actual": {
+   "initial": {
+    "inputs": [
+     "0",
+     "4000"
+    ],
+    "ticks": [
+     0,
+     1000,
+     2000,
+     3000,
+     4000
+    ]
+   },
+   "valid": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ]
+   },
+   "equal": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "greater": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "negative": {
+    "inputs": [
+     "-500",
+     "5000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ]
+   },
+   "blankMax": {
+    "inputs": [
+     "-500",
+     "4000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000
+    ]
+   },
+   "small": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "afterReload": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "auto": {
+    "inputs": [
+     "0",
+     "4000"
+    ],
+    "ticks": [
+     0,
+     1000,
+     2000,
+     3000,
+     4000
+    ]
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:03.360Z",
+  "id": "L4-CT-match",
+  "area": "Charts/L4",
+  "title": "Pressure-axis validation: CT match",
+  "expected": "valid applied; min=max and min>max rejected with message and prior range kept; negative, small range, reload and auto-reset honoured; inputs = plotted endpoints",
+  "actual": {
+   "initial": {
+    "inputs": [
+     "0",
+     "4000"
+    ],
+    "ticks": [
+     0,
+     500,
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000
+    ]
+   },
+   "valid": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ]
+   },
+   "equal": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "greater": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "negative": {
+    "inputs": [
+     "-500",
+     "5000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ]
+   },
+   "blankMax": {
+    "inputs": [
+     "-500",
+     "4000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000
+    ]
+   },
+   "small": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "afterReload": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "auto": {
+    "inputs": [
+     "0",
+     "4000"
+    ],
+    "ticks": [
+     0,
+     500,
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000
+    ]
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:08.694Z",
+  "id": "L4-BH-match",
+  "area": "Charts/L4",
+  "title": "Pressure-axis validation: BH match",
+  "expected": "valid applied; min=max and min>max rejected with message and prior range kept; negative, small range, reload and auto-reset honoured; inputs = plotted endpoints",
+  "actual": {
+   "initial": {
+    "inputs": [
+     "0",
+     "8000"
+    ],
+    "ticks": [
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000,
+     6000,
+     7000,
+     8000
+    ]
+   },
+   "valid": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ]
+   },
+   "equal": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "greater": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "negative": {
+    "inputs": [
+     "-500",
+     "5000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ]
+   },
+   "blankMax": {
+    "inputs": [
+     "-500",
+     "8000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     2000,
+     4000,
+     6000,
+     8000
+    ]
+   },
+   "small": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "afterReload": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "auto": {
+    "inputs": [
+     "0",
+     "8000"
+    ],
+    "ticks": [
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000,
+     6000,
+     7000,
+     8000
+    ]
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:14.526Z",
+  "id": "L4-CT-prediction",
+  "area": "Charts/L4",
+  "title": "Pressure-axis validation: CT prediction",
+  "expected": "valid applied; min=max and min>max rejected with message and prior range kept; negative, small range, reload and auto-reset honoured; inputs = plotted endpoints",
+  "actual": {
+   "initial": {
+    "inputs": [
+     "0",
+     "10000"
+    ],
+    "ticks": [
+     0,
+     2000,
+     4000,
+     6000,
+     8000,
+     10000
+    ]
+   },
+   "valid": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ]
+   },
+   "equal": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "greater": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "negative": {
+    "inputs": [
+     "-500",
+     "5000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ]
+   },
+   "blankMax": {
+    "inputs": [
+     "-500",
+     "10000"
+    ],
+    "ticks": [
+     -500,
+     2000,
+     4000,
+     6000,
+     8000,
+     10000
+    ]
+   },
+   "small": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "afterReload": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "auto": {
+    "inputs": [
+     "0",
+     "10000"
+    ],
+    "ticks": [
+     0,
+     2000,
+     4000,
+     6000,
+     8000,
+     10000
+    ]
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:19.829Z",
+  "id": "L4-BH-prediction",
+  "area": "Charts/L4",
+  "title": "Pressure-axis validation: BH prediction",
+  "expected": "valid applied; min=max and min>max rejected with message and prior range kept; negative, small range, reload and auto-reset honoured; inputs = plotted endpoints",
+  "actual": {
+   "initial": {
+    "inputs": [
+     "0",
+     "8000"
+    ],
+    "ticks": [
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000,
+     6000,
+     7000,
+     8000
+    ]
+   },
+   "valid": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ]
+   },
+   "equal": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "CT Prediction chart returned to automatic axis scaling.",
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "greater": {
+    "inputs": [
+     "1000",
+     "5000"
+    ],
+    "ticks": [
+     1000,
+     1500,
+     2000,
+     2500,
+     3000,
+     3500,
+     4000,
+     4500,
+     5000
+    ],
+    "toasts": [
+     "Axis minimum must be less than maximum. Previous range retained."
+    ]
+   },
+   "negative": {
+    "inputs": [
+     "-500",
+     "5000"
+    ],
+    "ticks": [
+     -500,
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000
+    ]
+   },
+   "blankMax": {
+    "inputs": [
+     "-500",
+     "8000"
+    ],
+    "ticks": [
+     -500,
+     2000,
+     4000,
+     6000,
+     8000
+    ]
+   },
+   "small": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "afterReload": {
+    "inputs": [
+     "3000",
+     "3000.5"
+    ],
+    "ticks": [
+     3000,
+     3000.1,
+     3000.2,
+     3000.3,
+     3000.4,
+     3000.5
+    ]
+   },
+   "auto": {
+    "inputs": [
+     "0",
+     "8000"
+    ],
+    "ticks": [
+     0,
+     1000,
+     2000,
+     3000,
+     4000,
+     5000,
+     6000,
+     7000,
+     8000
+    ]
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:24.457Z",
+  "id": "L3-declared-ft-s",
+  "area": "CT/L3",
+  "title": "Declared unit ft/s (source actually ft/min): no conversion applied",
+  "expected": "speed = raw value (e.g. -20 for passes); unit change marks result stale first",
+  "actual": {
+   "staleAfterUnit": "stale",
+   "speeds": [
+    -30,
+    0,
+    -0.5392156862745098,
+    53.57142857142857,
+    -20,
+    -20,
+    20,
+    -20
+   ],
+   "qaUnit": "CT speed input = ft/s; output = ft/s",
+   "clipSpeedCol": [
+    "-30.0000",
+    "0.0000",
+    "-0.5392",
+    "53.5714",
+    "-20.0000",
+    "-20.0000",
+    "20.0000",
+    "-20.0000"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:24.500Z",
+  "id": "L3-display-header",
+  "area": "CT/L3",
+  "title": "CT output header and display precision",
+  "expected": "header shows ft/s; 4 dp display",
+  "actual": {
+   "head": [
+    "CT Speed [ft/s]"
+   ],
+   "disp": [
+    "-30.0000",
+    "0.0000",
+    "-0.5392",
+    "53.5714",
+    "-20.0000",
+    "-20.0000",
+    "20.0000",
+    "-20.0000"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:30.581Z",
+  "id": "L6-zero-multiplier",
+  "area": "KM/L6",
+  "title": "Case 2 multipliers = 0",
+  "expected": "allowed; case ready (summary) with zero case kH",
+  "actual": {
+   "status": {
+    "summaryReady": true,
+    "caseSheetReady": true,
+    "reason": "Ready"
+   },
+   "c2props": [
+    "KL (MD) 22100.90 0.00",
+    "KL (TVD) 7116.69 0.00",
+    "Avg Perm (mD - MD) 18.42 0.00",
+    "Avg Perm (mD - TVD) 18.27 0.00",
+    "Avg Porosity, % 5.72% 5.72%"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:30.582Z",
+  "id": "L6-negative-multiplier",
+  "area": "KM/L6",
+  "title": "Case 4 dolomite = -2",
+  "expected": "actionable rejection message",
+  "actual": {
+   "status": {
+    "summaryReady": false,
+    "caseSheetReady": false,
+    "reason": "Enter numeric Dolomite and Limestone multipliers of zero or greater, and generate valid zones."
+   },
+   "line": "C1 \u00b7 READY\nC2 \u00b7 READY\nC3 \u00b7 READY\nC4 \u00b7 SKIPPED\nEnter numeric Dolomite and Limestone multipliers of zero or greater, and generate valid zones.",
+   "c4": "Case 4 skipped \u2014 missing/invalid multipliers or zone data Enter both x Dolomite and x Limestone, or use Analogue Wells \u2192 Transfer Cases. VBA leaves this Case output blank while the pair is incomplete."
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:30.582Z",
+  "id": "L6-blank-case1",
+  "area": "KM/L6",
+  "title": "Blank Case 1 limestone then Generate (Cases ticked)",
+  "expected": "existing rule: blank Case 1 cell defaults to 1.00",
+  "actual": {
+   "case1": [
+    "1.00",
+    "1.00"
+   ],
+   "status": {
+    "summaryReady": true,
+    "caseSheetReady": true,
+    "reason": "Ready"
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:50:30.582Z",
+  "id": "KM-unsupported-700",
+  "area": "KM/loadings",
+  "title": "Numeric 700 loading",
+  "expected": "unsupported message",
+  "actual": {
+   "summaryReady": false,
+   "caseSheetReady": false,
+   "reason": "Enter numeric Dolomite and Limestone multipliers of zero or greater, and generate valid zones."
+  },
+  "status": "PASS",
+  "note": "informational; see evidence"
+ },
+ {
+  "at": "2026-09-28T18:52:37.210Z",
+  "id": "PERF-no-header",
+  "area": "Perforations",
+  "title": "Perforation input: no-header",
+  "expected": "zonation built; contiguous; unique names",
+  "actual": {
+   "pasteToast": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Initial zonation generated with the VBA V48 HumanCluster engine (79 zones, global cap 150).",
+    "Final zonation updated with VBA layer-safe Split/Merge (79 zones). Review 5 zones thinner than 8 ft; manual boundaries retained."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": true,
+    "update": true,
+    "export": false
+   },
+   "zones": 79,
+   "first": [
+    "Zone_01",
+    10350.25,
+    10390.25
+   ],
+   "last": [
+    "Zone_79",
+    15904.75,
+    15910.25
+   ],
+   "contiguous": true,
+   "uniqueNames": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:38.696Z",
+  "id": "PERF-empty-depth",
+  "area": "Perforations",
+  "title": "Perforation input: empty-depth",
+  "expected": "Generate blocked with message /Correct invalid perforation row 1/",
+  "actual": {
+   "pasteToast": [
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     ""
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Correct invalid perforation row 1: bottom MD must exceed top MD."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:40.098Z",
+  "id": "PERF-non-numeric",
+  "area": "Perforations",
+  "title": "Perforation input: non-numeric",
+  "expected": "Generate blocked with message /Correct invalid perforation row 1/",
+  "actual": {
+   "pasteToast": [
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Correct invalid perforation row 1: bottom MD must exceed top MD."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:41.467Z",
+  "id": "PERF-bottom-eq-top",
+  "area": "Perforations",
+  "title": "Perforation input: bottom-eq-top",
+  "expected": "Generate blocked with message /row 1/",
+  "actual": {
+   "pasteToast": [
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     "10350.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Correct invalid perforation row 1: bottom MD must exceed top MD."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:42.777Z",
+  "id": "PERF-bottom-above-top",
+  "area": "Perforations",
+  "title": "Perforation input: bottom-above-top",
+  "expected": "Generate blocked with message /row 1/",
+  "actual": {
+   "pasteToast": [
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10390.25",
+     "10350.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Correct invalid perforation row 1: bottom MD must exceed top MD."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:44.205Z",
+  "id": "PERF-overlap",
+  "area": "Perforations",
+  "title": "Perforation input: overlap",
+  "expected": "Generate blocked with message /Overlapping/",
+  "actual": {
+   "pasteToast": [
+    "23 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10380.25",
+     "10400.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Overlapping perforations: rows 1 and 2. Correct the overlap before generating."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:45.547Z",
+  "id": "PERF-duplicate",
+  "area": "Perforations",
+  "title": "Perforation input: duplicate",
+  "expected": "Generate blocked with message /Overlapping/",
+  "actual": {
+   "pasteToast": [
+    "23 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10350.25",
+     "10390.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Overlapping perforations: rows 1 and 2. Correct the overlap before generating."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:46.918Z",
+  "id": "PERF-wrong-layer",
+  "area": "Perforations",
+  "title": "Perforation input: wrong-layer",
+  "expected": "Generate blocked with message /does not match job layer/",
+  "actual": {
+   "pasteToast": [
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K2",
+     "10350.25",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Perforation row 1 does not match job layer K1."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:48.261Z",
+  "id": "PERF-outside-coverage",
+  "area": "Perforations",
+  "title": "Perforation input: outside-coverage",
+  "expected": "Generate blocked with message /coverage/",
+  "actual": {
+   "pasteToast": [
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "9990",
+     "10010"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Log MD coverage does not span perforation row 1. Load the full interval."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:49.631Z",
+  "id": "PERF-partly-outside-bottom",
+  "area": "Perforations",
+  "title": "Perforation input: partly-outside-bottom",
+  "expected": "Generate blocked with message /coverage/",
+  "actual": {
+   "pasteToast": [
+    "23 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Log MD coverage does not span perforation row 23. Load the full interval."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:53.321Z",
+  "id": "PERF-first-last-sample",
+  "area": "Perforations",
+  "title": "Perforation input: first-last-sample",
+  "expected": "zonation built; contiguous; unique names",
+  "actual": {
+   "pasteToast": [
+    "2 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10000",
+     "10020"
+    ],
+    [
+     "K1",
+     "21979.5",
+     "21999.5"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Initial zonation generated with the VBA V48 HumanCluster engine (3 zones, global cap 150).",
+    "Final zonation updated with VBA layer-safe Split/Merge (3 zones)."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": true,
+    "update": true,
+    "export": false
+   },
+   "zones": 3,
+   "first": [
+    "Zone_01",
+    10000,
+    10020
+   ],
+   "last": [
+    "Zone_03",
+    21979.5,
+    21999.5
+   ],
+   "contiguous": true,
+   "uniqueNames": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:52:57.161Z",
+  "id": "PERF-unsorted",
+  "area": "Perforations",
+  "title": "Perforation input: unsorted",
+  "expected": "zonation built; contiguous; unique names",
+  "actual": {
+   "pasteToast": [
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "15845.25",
+     "15910.25"
+    ],
+    [
+     "K1",
+     "15670.25",
+     "15725.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Initial zonation generated with the VBA V48 HumanCluster engine (79 zones, global cap 150).",
+    "Final zonation updated with VBA layer-safe Split/Merge (79 zones). Review 5 zones thinner than 8 ft; manual boundaries retained."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": true,
+    "update": true,
+    "export": false
+   },
+   "zones": 79,
+   "first": [
+    "Zone_01",
+    10350.25,
+    10390.25
+   ],
+   "last": [
+    "Zone_79",
+    15904.75,
+    15910.25
+   ],
+   "contiguous": true,
+   "uniqueNames": true,
+   "sameAsSorted": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:01.480Z",
+  "id": "PERF-formatted-thousands",
+  "area": "Perforations",
+  "title": "Perforation input: formatted-thousands",
+  "expected": "zonation built; contiguous; unique names",
+  "actual": {
+   "pasteToast": [
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "22 interval(s) loaded, replacing the table."
+   ],
+   "table": [
+    [
+     "K1",
+     "10350.25",
+     "10390.25"
+    ],
+    [
+     "K1",
+     "10510.25",
+     "10565.25"
+    ]
+   ],
+   "genToasts": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Initial zonation generated with the VBA V48 HumanCluster engine (79 zones, global cap 150).",
+    "Final zonation updated with VBA layer-safe Split/Merge (79 zones). Review 5 zones thinner than 8 ft; manual boundaries retained."
+   ],
+   "steps": {
+    "refresh": true,
+    "generate": true,
+    "update": true,
+    "export": false
+   },
+   "zones": 79,
+   "first": [
+    "Zone_01",
+    10350.25,
+    10390.25
+   ],
+   "last": [
+    "Zone_79",
+    15904.75,
+    15910.25
+   ],
+   "contiguous": true,
+   "uniqueNames": true,
+   "sameAsSorted": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:04.798Z",
+  "id": "PERF-manual-add-edit-delete",
+  "area": "Perforations",
+  "title": "Manual add, edit, delete row",
+  "expected": "row added (23), edited, deleted (22); invalidation of zonation",
+  "actual": {
+   "nAdd": 23,
+   "edited": {
+    "layer": "K1",
+    "top": "17000",
+    "bottom": "17010"
+   },
+   "nAfterDelete": 22,
+   "steps": {
+    "refresh": true,
+    "generate": false,
+    "update": false,
+    "export": false
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:14.471Z",
+  "id": "SM-cross-perf-rejected",
+  "area": "Split/Merge",
+  "title": "SPLIT crossing perforation boundary",
+  "expected": "row flagged; Update blocked with message",
+  "actual": {
+   "toasts": [
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "Correct Split/Merge rows: 3 (Keep the interval inside one perforation)"
+   ],
+   "warn": "Row 3: Keep the interval inside one perforation",
+   "update": false
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:17.190Z",
+  "id": "SM-split-merge-exact",
+  "area": "Split/Merge",
+  "title": "Manual SPLIT at 10360.37/10371.11 and MERGE of perf 2",
+  "expected": "exact manual boundaries retained (no snapping); perf 2 = one zone; contiguous; unique names; thin-zone warning if <8 ft",
+  "actual": {
+   "toasts": [
+    "Final zonation updated with VBA layer-safe Split/Merge (79 zones). Review 4 zones thinner than 8 ft; manual boundaries retained."
+   ],
+   "zonesBefore": 79,
+   "zonesAfter": 79,
+   "splitKept": [
+    true,
+    true
+   ],
+   "perf2Zones": [
+    [
+     "Zone_05",
+     10510.25,
+     10565.25
+    ]
+   ],
+   "contiguous": true,
+   "unique": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:21.207Z",
+  "id": "SM-thin-zone",
+  "area": "Split/Merge",
+  "title": "SPLIT 10388\u201310390 at perforation end (2 ft zone)",
+  "expected": "boundary retained; thin-zone warning; not silently moved",
+  "actual": {
+   "toasts": [
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "Final zonation updated with VBA layer-safe Split/Merge (81 zones). Review 6 zones thinner than 8 ft; manual boundaries retained."
+   ],
+   "thin": [
+    [
+     "Zone_04",
+     10388,
+     10390
+    ],
+    [
+     "Zone_05",
+     10390,
+     10390.25
+    ],
+    [
+     "Zone_24",
+     11778.25,
+     11785.25
+    ],
+    [
+     "Zone_65",
+     14975.25,
+     14980.25
+    ],
+    [
+     "Zone_80",
+     15899.25,
+     15904.75
+    ],
+    [
+     "Zone_81",
+     15904.75,
+     15910.25
+    ]
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:22.326Z",
+  "id": "SM-drag-split",
+  "area": "Split/Merge",
+  "title": "Drag SPLIT on correction chart (perf 5 focus)",
+  "expected": "row captured, snapped to log samples, inside perf 5 (11125.25\u201311160.25)",
+  "actual": {
+   "drag": {
+    "top": 11241.5,
+    "bottom": 11255,
+    "action": "SPLIT"
+   },
+   "fb": "SPLIT captured: 11241.5\u201311255.0 ft"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:23.105Z",
+  "id": "SM-drag-cross-rejected",
+  "area": "Split/Merge",
+  "title": "Drag across several perforations",
+  "expected": "rejected with message; no row added",
+  "actual": {
+   "fb": "Rejected: correction must remain inside one perforation boundary.",
+   "n": 4,
+   "n0": 4
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:53:26.168Z",
+  "id": "ZON-repeat-unchanged",
+  "area": "Zonation",
+  "title": "Repeat Generate and Update with unchanged inputs",
+  "expected": "already-current message; cases/template/prediction status preserved",
+  "actual": {
+   "tg": [
+    "This step is already current. Existing KM cases and prediction template retained."
+   ],
+   "tu": [
+    "This step is already current. Existing KM cases and prediction template retained."
+   ],
+   "casesBefore": true,
+   "casesAfter": true,
+   "stale": [
+    true,
+    true
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:54:19.343Z",
+  "id": "CT-var-CT_actual_1s",
+  "area": "CT Actual",
+  "title": "Process CT_actual_1s.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.0833,
+   "scheduledPlusFill": 218.56,
+   "excludedFromWindowUnreported": 0.5233,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.4667,
+     1,
+     11500,
+     11005,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.2,
+     1.167,
+     11005,
+     11000,
+     -0.009
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6333,
+     2,
+     11000,
+     11500,
+     0.8929
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     25,
+     2,
+     11500,
+     11250,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     30.625,
+     2.5,
+     11250,
+     11005,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11005,
+     11495,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.125,
+     2,
+     11495,
+     11005,
+     -0.3333
+    ]
+   ],
+   "fill": 15.01,
+   "window": 218.56,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "CT_actual_1s.txt loaded, activated and saved locally (7380 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.5233 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:22.265Z",
+  "id": "CT-var-CT_actual_5s",
+  "area": "CT Actual",
+  "title": "Process CT_actual_5s.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.0833,
+   "scheduledPlusFill": 218.59,
+   "excludedFromWindowUnreported": 0.4933,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.5,
+     1,
+     11500,
+     11004.5,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.1833,
+     0.818,
+     11004.5,
+     11000,
+     -0.0081
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6667,
+     2,
+     11000,
+     11499.666667,
+     0.882
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     24.8333,
+     2,
+     11499.666667,
+     11251.333333,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     30.8,
+     2.5,
+     11251.333333,
+     11004.666667,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11004.666667,
+     11495.333333,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.1167,
+     2,
+     11495.333333,
+     11004.666667,
+     -0.3333
+    ]
+   ],
+   "fill": 14.99,
+   "window": 218.59,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "CT_actual_5s.txt loaded, activated and saved locally (1477 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.4933 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:25.064Z",
+  "id": "CT-var-CT_actual_10s",
+  "area": "CT Actual",
+  "title": "Process CT_actual_10s.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.0833,
+   "scheduledPlusFill": 218.7567,
+   "excludedFromWindowUnreported": 0.3233,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.5,
+     1,
+     11500,
+     11004.5,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.1833,
+     0.364,
+     11004.5,
+     11000,
+     -0.0081
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6667,
+     2,
+     11000,
+     11499.666667,
+     0.8713
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     24.6667,
+     2,
+     11499.666667,
+     11253,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     31.175,
+     2.5,
+     11253,
+     11003,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11003,
+     11497,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.075,
+     2,
+     11497,
+     11003,
+     -0.3333
+    ]
+   ],
+   "fill": 14.99,
+   "window": 218.76,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "CT_actual_10s.txt loaded, activated and saved locally (739 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.3233 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:27.913Z",
+  "id": "CT-var-CT_actual_1s_meter_reset",
+  "area": "CT Actual",
+  "title": "Process CT_actual_1s_meter_reset.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.0833,
+   "scheduledPlusFill": 218.56,
+   "excludedFromWindowUnreported": 0.5233,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.4667,
+     1,
+     11500,
+     11005,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.2,
+     1.167,
+     11005,
+     11000,
+     -0.009
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6333,
+     2,
+     11000,
+     11500,
+     0.8929
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     25,
+     2,
+     11500,
+     11250,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     30.625,
+     2.5,
+     11250,
+     11005,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11005,
+     11495,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.125,
+     2,
+     11495,
+     11005,
+     -0.3333
+    ]
+   ],
+   "fill": 15.01,
+   "window": 218.56,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "CT_actual_1s_meter_reset.txt loaded, activated and saved locally (7380 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.5233 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:30.933Z",
+  "id": "CT-var-CT_missing_200rows",
+  "area": "CT Actual",
+  "title": "Process CT_missing_200rows.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.0833,
+   "scheduledPlusFill": 218.56,
+   "excludedFromWindowUnreported": 0.5233,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.4667,
+     1,
+     11500,
+     11005,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.2,
+     1.167,
+     11005,
+     11000,
+     -0.009
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6333,
+     2,
+     11000,
+     11500,
+     0.8929
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     25,
+     2,
+     11500,
+     11250,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     30.625,
+     2.5,
+     11250,
+     11005,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11005,
+     11495,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.125,
+     2,
+     11495,
+     11005,
+     -0.3333
+    ]
+   ],
+   "fill": 15.01,
+   "window": 218.56,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "CT_missing_200rows.txt loaded, activated and saved locally (7180 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.5233 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:33.876Z",
+  "id": "CT-var-CT_duplicate_rows",
+  "area": "CT Actual",
+  "title": "Process CT_duplicate_rows.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.0833,
+   "scheduledPlusFill": 218.56,
+   "excludedFromWindowUnreported": 0.5233,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.4667,
+     1,
+     11500,
+     11005,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.2,
+     1.167,
+     11005,
+     11000,
+     -0.0096
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6333,
+     2,
+     11000,
+     11500,
+     0.8932
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     25,
+     2,
+     11500,
+     11250,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     30.625,
+     2.5,
+     11250,
+     11005,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11005,
+     11495,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.125,
+     2,
+     11495,
+     11005,
+     -0.3333
+    ]
+   ],
+   "fill": 15.01,
+   "window": 218.56,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "CT_duplicate_rows.txt loaded, activated and saved locally (7528 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.5233 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:36.758Z",
+  "id": "CT-var-CT_unsorted_pairs",
+  "area": "CT Actual",
+  "title": "Process CT_unsorted_pairs.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 219.2917,
+   "scheduledPlusFill": 218.7683,
+   "excludedFromWindowUnreported": 0.5217,
+   "status": "REVIEW",
+   "rows": [
+    [
+     "Acid Soak",
+     "",
+     16.4667,
+     1,
+     11500,
+     11005,
+     -0.5
+    ],
+    [
+     "Shut-in",
+     "",
+     0,
+     0,
+     11000,
+     11000,
+     0
+    ],
+    [
+     "Wash restart / transition",
+     "",
+     0.2,
+     1.167,
+     11005,
+     11000,
+     -0.009
+    ],
+    [
+     "Run-in to Bottom",
+     "",
+     18.6333,
+     2,
+     11000,
+     11500,
+     0.8929
+    ],
+    [
+     "1st Pass (Up Pass)",
+     1,
+     25,
+     2,
+     11500,
+     11250,
+     -0.3333
+    ],
+    [
+     "1st Pass (Up Pass)",
+     2,
+     30.8333,
+     2.5,
+     11250,
+     11005,
+     -0.3333
+    ],
+    [
+     "2nd Pass (Down Pass)",
+     3,
+     62.5,
+     2.5,
+     11005,
+     11495,
+     0.3333
+    ],
+    [
+     "3rd Pass (Up Pass)",
+     4,
+     50.125,
+     2,
+     11495,
+     11005,
+     -0.3333
+    ]
+   ],
+   "fill": 15.01,
+   "window": 218.77,
+   "unalloc": 0,
+   "qaWarn": [
+    "WARNING: difference >10%"
+   ],
+   "toasts": [
+    "CT_unsorted_pairs.txt loaded, activated and saved locally (7380 recognized rows)."
+   ],
+   "proc": "current"
+  },
+  "status": "FAIL",
+  "note": "D-03: pumped volume outside processed window not reported (0.5217 bbl); all other checks consistent"
+ },
+ {
+  "at": "2026-09-28T18:54:39.595Z",
+  "id": "CT-var-CT_eof_before_target",
+  "area": "CT Actual",
+  "title": "Process CT_eof_before_target.txt",
+  "expected": "status consistent with QA; schedule+fill = processed window; excluded volume accounted",
+  "actual": {
+   "fileTotalPumped": 207.75,
+   "scheduledPlusFill": 0,
+   "excludedFromWindowUnreported": null,
+   "status": "FAILED",
+   "rows": [],
+   "fill": null,
+   "window": null,
+   "unalloc": null,
+   "qaWarn": [
+    "WARNING: Processing failed: Could not detect 3rd Up Pass endpoint. Reprocess the current dataset."
+   ],
+   "toasts": [
+    "CT_eof_before_target.txt loaded, activated and saved locally (6980 recognized rows).",
+    "Could not detect 3rd Up Pass endpoint."
+   ],
+   "proc": "failed"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:54:45.008Z",
+  "id": "BH-var-baseline",
+  "area": "BH Actual",
+  "title": "BH_actual_1s.txt \u00b7 baseline",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-3",
+     150,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 10,
+   "detected": 760,
+   "alloc": 750,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "BH_actual_1s.txt loaded, activated and saved locally (2900 recognized rows)."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:54:48.223Z",
+  "id": "BH-var-cutoff-at-first-OPR-sample-excludes-10-bbl-pre-stage-",
+  "area": "BH Actual",
+  "title": "BH_actual_1s.txt \u00b7 cutoff at first OPR sample (excludes 10 bbl pre-stage)",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     149.583,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-3",
+     150,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 0,
+   "detected": 749.58,
+   "alloc": 749.58,
+   "baseline": 10.4,
+   "cut": "Detection start cutoff = 08:03:20\nFirst retained sample = 08:03:20\nEarlier records excluded = 200",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:54:51.286Z",
+  "id": "BH-var-cutoff-before-recording-next-day-interpretation-",
+  "area": "BH Actual",
+  "title": "BH_actual_1s.txt \u00b7 cutoff before recording (next-day interpretation)",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "FAILED",
+   "proc": "failed",
+   "rows": [],
+   "excluded": null,
+   "detected": null,
+   "alloc": null,
+   "baseline": null,
+   "cut": "",
+   "warn": [
+    "WARNING: Processing failed: Detection start time is outside the recorded time range for that day. Reprocess the current dataset."
+   ],
+   "toasts": [
+    "Detection start time is outside the recorded time range for that day."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:54:54.171Z",
+  "id": "BH-var-blank-cutoff",
+  "area": "BH Actual",
+  "title": "BH_actual_1s.txt \u00b7 blank cutoff",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-3",
+     150,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 10,
+   "detected": 760,
+   "alloc": 750,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:54:57.110Z",
+  "id": "BH-var-meter-starts-at-120-bbl",
+  "area": "BH Actual",
+  "title": "BH_nonzero_start_cum.txt \u00b7 meter starts at 120 bbl",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-3",
+     150,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 130,
+   "detected": 880,
+   "alloc": 750,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": [
+    "BH_nonzero_start_cum.txt loaded, activated and saved locally (2900 recognized rows)."
+   ]
+  },
+  "status": "FAIL",
+  "note": "D-02: opening meter reading counted as pumped (excluded 130 / detected 880 bbl vs 760 pumped)"
+ },
+ {
+  "at": "2026-09-28T18:55:00.102Z",
+  "id": "BH-var-crosses-midnight",
+  "area": "BH Actual",
+  "title": "BH_midnight.txt \u00b7 crosses midnight",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-3",
+     150,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 10,
+   "detected": 760,
+   "alloc": 750,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": [
+    "BH_midnight.txt loaded, activated and saved locally (2900 recognized rows)."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:55:03.340Z",
+  "id": "BH-var-cutoff-after-midnight",
+  "area": "BH Actual",
+  "title": "BH_midnight.txt \u00b7 cutoff after midnight",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 759.95,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-3",
+     150,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 0.95,
+   "detected": 750.95,
+   "alloc": 750,
+   "baseline": 9.1,
+   "cut": "Detection start cutoff = 00:02:00\nFirst retained sample = 00:02:00\nEarlier records excluded = 180",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": []
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:55:06.561Z",
+  "id": "BH-var-diverter-at-9-5-bpm",
+  "area": "BH Actual",
+  "title": "BH_div1_rate_9.5.txt \u00b7 diverter at 9.5 bpm",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 749.6,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3564
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3564
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3564
+    ],
+    [
+     "OPR-2",
+     150.017,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3570
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3570
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "OPR-3",
+     149.983,
+     25,
+     3750
+    ],
+    [
+     "Overflush",
+     0.017,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 0,
+   "detected": 750.02,
+   "alloc": 750.02,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": [
+    "BH_div1_rate_9.5.txt loaded, activated and saved locally (2738 recognized rows)."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:55:09.566Z",
+  "id": "BH-var-diverter-at-10-5-bpm",
+  "area": "BH Actual",
+  "title": "BH_div1_rate_10.5.txt \u00b7 diverter at 10.5 bpm",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 749.633,
+   "status": "PASS",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3576
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3576
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3576
+    ],
+    [
+     "OPR-2",
+     150.05,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "VDA",
+     30,
+     10,
+     3570
+    ],
+    [
+     "MaxCO3-2",
+     70,
+     10,
+     3570
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "OPR-3",
+     149.95,
+     25,
+     3750
+    ],
+    [
+     "Overflush",
+     0.05,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 0,
+   "detected": 750.05,
+   "alloc": 750.05,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)",
+    "- MaxCO3-2 detected 120.0 bbl vs planned 120.0 bbl (-0.0 bbl)"
+   ],
+   "toasts": [
+    "BH_div1_rate_10.5.txt loaded, activated and saved locally (2666 recognized rows)."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:55:12.493Z",
+  "id": "BH-var-diverter-at-10-51-bpm",
+  "area": "BH Actual",
+  "title": "BH_div1_rate_10.51.txt \u00b7 diverter at 10.51 bpm",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 749.572,
+   "status": "REVIEW",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "OPR-1",
+     119.989,
+     11,
+     3576.12
+    ],
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3570
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "OPR-2",
+     30.011,
+     25,
+     3750
+    ],
+    [
+     "Overflush",
+     119.989,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 0,
+   "detected": 749.99,
+   "alloc": 749.99,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "WARNING / QA:",
+    "- Earlier OPR-1 volume 420.0 bbl is outside 135.0\u2013165.0 bbl (0.9\u20131.1 \u00d7 J6). Schedule generated for engineering review.",
+    "- Detected OPR stage count 2 does not match J8 planned/expected count 3.",
+    "- Detected parent diverter count 1 does not match J9 planned/expected count 2.",
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (-0.0 bbl)"
+   ],
+   "toasts": [
+    "BH_div1_rate_10.51.txt loaded, activated and saved locally (2665 recognized rows)."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:55:15.536Z",
+  "id": "BH-var-diverter-at-9-49-bpm",
+  "area": "BH Actual",
+  "title": "BH_div1_rate_9.49.txt \u00b7 diverter at 9.49 bpm",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 749.632,
+   "status": "REVIEW",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "OPR-1",
+     120.048,
+     9,
+     3563.88
+    ],
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3570
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3570
+    ],
+    [
+     "OPR-2",
+     29.952,
+     25,
+     3750
+    ],
+    [
+     "Overflush",
+     120.048,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 0,
+   "detected": 750.05,
+   "alloc": 750.05,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "WARNING / QA:",
+    "- Earlier OPR-1 volume 420.0 bbl is outside 135.0\u2013165.0 bbl (0.9\u20131.1 \u00d7 J6). Schedule generated for engineering review.",
+    "- Detected OPR stage count 2 does not match J8 planned/expected count 3.",
+    "- Detected parent diverter count 1 does not match J9 planned/expected count 2.",
+    "- MaxCO3-1 detected 120.0 bbl vs planned 120.0 bbl (+0.0 bbl)"
+   ],
+   "toasts": [
+    "BH_div1_rate_9.49.txt loaded, activated and saved locally (2739 recognized rows)."
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T18:55:18.557Z",
+  "id": "BH-var-3-s-26-bpm-spike-inside-diverter-1",
+  "area": "BH Actual",
+  "title": "BH_spike_in_diverter.txt \u00b7 3 s 26 bpm spike inside diverter 1",
+  "expected": "see report",
+  "actual": {
+   "fileTotalPumped": 760.75,
+   "status": "REVIEW",
+   "proc": "current",
+   "rows": [
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "OPR-1",
+     120.8,
+     10,
+     3720
+    ],
+    [
+     "OPR-1",
+     150,
+     25,
+     3750
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "MaxCO3-1",
+     100,
+     10,
+     3720
+    ],
+    [
+     "VDA",
+     10,
+     10,
+     3720
+    ],
+    [
+     "OPR-2",
+     29.2,
+     25,
+     3750
+    ],
+    [
+     "Overflush",
+     120.8,
+     25,
+     3750
+    ],
+    [
+     "Displacement",
+     60,
+     20,
+     3690
+    ]
+   ],
+   "excluded": 10,
+   "detected": 760.8,
+   "alloc": 750.8,
+   "baseline": 0,
+   "cut": "",
+   "warn": [
+    "WARNING / QA:",
+    "- 10 bpm cluster treated as shutdown/restart continuation of OPR-1.",
+    "- 10 bpm cluster treated as shutdown/restart continuation of OPR-1.",
+    "- Earlier OPR-1 volume 420.8 bbl is outside 135.0\u2013165.0 bbl (0.9\u20131.1 \u00d7 J6). Schedule generated for engineering review.",
+    "- Detected OPR stage count 2 does not match J8 planned/expected count 3.",
+    "- Detected parent diverter count 1 does not match J9 planned/expected count 2."
+   ],
+   "toasts": [
+    "BH_spike_in_diverter.txt loaded, activated and saved locally (2900 recognized rows)."
+   ]
+  },
+  "status": "REQUIREMENT CLARIFICATION",
+  "note": "3-s spike splits diverter-1; flagged REVIEW, not silent. No documented spike-filter requirement."
+ },
+ {
+  "at": "2026-09-28T18:56:02.312Z",
+  "id": "D-BH-START-CUM-run1",
+  "area": "BH Actual",
+  "title": "Recording starts mid OPR-1 with meter at 51.67 bbl, no detection start",
+  "expected": "OPR-1 = 150 bbl \u2212 41.67 bbl pumped before recording = 108.33 bbl (only volume observed in the file)",
+  "actual": {
+   "opr1": 160,
+   "rows": [
+    [
+     "OPR-1",
+     160
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "MaxCO3-1",
+     100
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "OPR-2",
+     150
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "VDA",
+     30
+    ],
+    [
+     "MaxCO3-2",
+     70
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "OPR-3",
+     140
+    ],
+    [
+     "Overflush",
+     10
+    ],
+    [
+     "Displacement",
+     60
+    ]
+   ],
+   "qa": [
+    "PASS: included schedule stage counts and earlier OPR volumes match the expected controls; excluded opening volume is accounted separately below.",
+    "Volume before processing baseline = 0.00 bbl",
+    "Excluded initial unclassified volume = 0.00 bbl",
+    "Detected pumped volume after offset = 760.00 bbl",
+    "Allocated schedule volume = 760.00 bbl",
+    "Unallocated volume = 0.000000 bbl"
+   ]
+  },
+  "status": "FAIL"
+ },
+ {
+  "at": "2026-09-28T18:56:07.887Z",
+  "id": "D-BH-START-CUM-run2",
+  "area": "BH Actual",
+  "title": "Recording starts mid OPR-1 with meter at 51.67 bbl, no detection start",
+  "expected": "OPR-1 = 150 bbl \u2212 41.67 bbl pumped before recording = 108.33 bbl (only volume observed in the file)",
+  "actual": {
+   "opr1": 160,
+   "rows": [
+    [
+     "OPR-1",
+     160
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "MaxCO3-1",
+     100
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "OPR-2",
+     150
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "VDA",
+     30
+    ],
+    [
+     "MaxCO3-2",
+     70
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "OPR-3",
+     140
+    ],
+    [
+     "Overflush",
+     10
+    ],
+    [
+     "Displacement",
+     60
+    ]
+   ],
+   "qa": [
+    "PASS: included schedule stage counts and earlier OPR volumes match the expected controls; excluded opening volume is accounted separately below.",
+    "Volume before processing baseline = 0.00 bbl",
+    "Excluded initial unclassified volume = 0.00 bbl",
+    "Detected pumped volume after offset = 760.00 bbl",
+    "Allocated schedule volume = 760.00 bbl",
+    "Unallocated volume = 0.000000 bbl"
+   ]
+  },
+  "status": "FAIL"
+ },
+ {
+  "at": "2026-09-28T18:56:28.513Z",
+  "id": "D-BH-START-CUM-firstsample-cutoff",
+  "area": "BH Actual",
+  "title": "Same file with detection start = first sample time 08:05:00",
+  "expected": "same as \"process from beginning\"",
+  "actual": {
+   "rows": [
+    [
+     "OPR-1",
+     107.92
+    ],
+    [
+     "OPR-1",
+     120
+    ],
+    [
+     "OPR-1",
+     150
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "MaxCO3-1",
+     100
+    ],
+    [
+     "VDA",
+     10
+    ],
+    [
+     "OPR-2",
+     72.08
+    ],
+    [
+     "Overflush",
+     77.92
+    ],
+    [
+     "Displacement",
+     60
+    ]
+   ],
+   "status": "REVIEW"
+  },
+  "status": "PASS",
+  "note": "Correct OPR-1 107.92 bbl; REVIEW because partial first OPR < 0.9\u00d7J6 \u2014 consistent with rules; contrasts with blank cutoff (D-02)"
+ },
+ {
+  "at": "2026-09-28T18:57:10.616Z",
+  "id": "PERS-exit-continue",
+  "area": "Persistence",
+  "title": "Exit then continue same job",
+  "expected": "no data loss, no confirm",
+  "actual": {
+   "same": true,
+   "dialogs": 0
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:57:11.330Z",
+  "id": "PERS-new-job-cancel",
+  "area": "Persistence",
+  "title": "Change well on landing, cancel confirmation",
+  "expected": "previous job intact",
+  "actual": {
+   "well": "NFQ22-4",
+   "same": true,
+   "appActive": "false",
+   "dialog": [
+    {
+     "type": "confirm",
+     "message": "Changing Well, Project or Segment starts a new clean job and clears the previous job data from this browser. Continue?",
+     "policy": "dismiss"
+    }
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:57:16.186Z",
+  "id": "PERS-reload-complete-job",
+  "area": "Persistence",
+  "title": "Reload completed job",
+  "expected": "all state + raw/KM/snapshot data restored; export ready",
+  "actual": {
+   "stateSame": true,
+   "u0": {
+    "ctLock": "MATCH SAVED \u00b7 -12.5 bbl",
+    "badge": "FINAL APPROVED",
+    "ctRows": "LOADED \u00b7 300 ROWS",
+    "bhRows": "LOADED \u00b7 150 ROWS",
+    "exportDisabled": false,
+    "ctActual": "Processed CT Acid Wash \u00b7 CT_actual_1s.txt",
+    "bhActual": "BH_actual_1s.txt"
+   },
+   "u3": {
+    "ctLock": "MATCH SAVED \u00b7 -12.5 bbl",
+    "badge": "FINAL APPROVED",
+    "ctRows": "LOADED \u00b7 300 ROWS",
+    "bhRows": "LOADED \u00b7 150 ROWS",
+    "exportDisabled": false,
+    "ctActual": "Processed CT Acid Wash \u00b7 CT_actual_1s.txt",
+    "bhActual": "BH_actual_1s.txt"
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:57:19.626Z",
+  "id": "PERS-new-job-clean",
+  "area": "Persistence",
+  "title": "Confirm new job NFW/NFQ40-1/K2",
+  "expected": "clean job: no rows, perfs, predictions, matching, charts; old job data removed",
+  "actual": {
+   "s4": {
+    "well": "NFQ40-1",
+    "layer": "K2",
+    "project": "NFW",
+    "rows": 0,
+    "perfs": 0,
+    "steps": {
+     "refresh": false,
+     "generate": false,
+     "update": false,
+     "export": false
+    },
+    "cases": false,
+    "ctOut": 0,
+    "bhOut": 0,
+    "ctLock": false,
+    "ctShift": 0,
+    "approved": "",
+    "fi": 0,
+    "pressure": {
+     "probeTVD": "",
+     "formationPressure": "",
+     "fgTVDSS": "0.817",
+     "fixedConversion": "0.107"
+    },
+    "analogue": 0,
+    "axes": {
+     "xMin": null,
+     "xMax": null,
+     "pMin": null,
+     "pMax": null,
+     "rMin": null,
+     "rMax": null
+    }
+   },
+   "u4": {
+    "ctLock": "LIVE \u00b7 AUTO-SAVED",
+    "badge": "NOT APPROVED",
+    "ctRows": "NO TABLE",
+    "bhRows": "NO TABLE",
+    "exportDisabled": true,
+    "ctActual": "No CT Actual dataset",
+    "bhActual": "No Bullheading Actual dataset"
+   },
+   "rv": "NO TABLE",
+   "charts": "Chart 1Generate zonation to plot.",
+   "idb": {
+    "raw": [],
+    "heavy": [
+     "NFE::WELL-01::K1",
+     "NFE::WELL-01::K1::meta",
+     "NFW::NFQ40-1::K2",
+     "NFW::NFQ40-1::K2::meta"
+    ],
+    "match": []
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:57:20.186Z",
+  "id": "PERS-reset-cancel",
+  "area": "Persistence",
+  "title": "Reset All \u2192 cancel",
+  "expected": "no change",
+  "actual": {
+   "well": "NFQ40-1"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:57:23.270Z",
+  "id": "PERS-reset-confirm",
+  "area": "Persistence",
+  "title": "Reset All \u2192 confirm",
+  "expected": "landing, empty storage",
+  "actual": {
+   "ls": {
+    "well": "WELL-01",
+    "started": false
+   },
+   "idb6": {
+    "raw": 0,
+    "heavy": 2,
+    "match": 0,
+    "review": 0
+   },
+   "landing": "block"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:58:09.357Z",
+  "id": "PERS-storage-quota",
+  "area": "Persistence",
+  "title": "Storage failure (40k-row analogue DB exceeds localStorage), later edit, reload",
+  "expected": "user warned; after reload state is last committed (consistent) and warning explains loss",
+  "actual": {
+   "warnBar": "SAVE WARNING \u2014 browser persistence failed. Keep this tab open and export a workbook before closing.",
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "Browser storage is unavailable or full. Current calculations still work, but this session may not persist after closing the browser.",
+    "40000 analogue row(s) loaded from \"analogue_big_40000.xlsx\" \u00b7 DB."
+   ],
+   "afterReload": {
+    "analogue": 10,
+    "pressure": "3450"
+   },
+   "banner": null
+  },
+  "status": "PASS",
+  "note": "Edits after the failure (pressure 3500, 40k DB) are lost on reload; warning was displayed."
+ },
+ {
+  "at": "2026-09-28T18:58:16.893Z",
+  "id": "UPG-simulated-BETA169-revision",
+  "area": "Upgrade",
+  "title": "Stored job relabelled calculationRevision=BETA169 then opened in BETA170 (simulation, not a genuine BETA169 job)",
+  "expected": "no silent loss of schedules/approval/alignment",
+  "actual": {
+   "same": true,
+   "before": {
+    "well": "NFQ22-4",
+    "layer": "K1",
+    "project": "NFE",
+    "rows": 24000,
+    "perfs": 22,
+    "steps": {
+     "refresh": true,
+     "generate": true,
+     "update": true,
+     "export": true
+    },
+    "cases": true,
+    "ctOut": 8,
+    "bhOut": 11,
+    "ctLock": true,
+    "ctShift": -12.5,
+    "approved": "bhm1",
+    "approvedP": 3450,
+    "fi": 75,
+    "pressure": {
+     "probeTVD": "8500",
+     "formationPressure": "3450",
+     "fgTVDSS": "0.817",
+     "fixedConversion": "0.107"
+    },
+    "analogue": 10,
+    "axes": {
+     "xMin": null,
+     "xMax": null,
+     "pMin": null,
+     "pMax": null,
+     "rMin": null,
+     "rMax": null
+    }
+   },
+   "after": {
+    "well": "NFQ22-4",
+    "layer": "K1",
+    "project": "NFE",
+    "rows": 24000,
+    "perfs": 22,
+    "steps": {
+     "refresh": true,
+     "generate": true,
+     "update": true,
+     "export": true
+    },
+    "cases": true,
+    "ctOut": 8,
+    "bhOut": 11,
+    "ctLock": true,
+    "ctShift": -12.5,
+    "approved": "bhm1",
+    "approvedP": 3450,
+    "fi": 75,
+    "pressure": {
+     "probeTVD": "8500",
+     "formationPressure": "3450",
+     "fgTVDSS": "0.817",
+     "fixedConversion": "0.107"
+    },
+    "analogue": 10,
+    "axes": {
+     "xMin": null,
+     "xMax": null,
+     "pMin": null,
+     "pMax": null,
+     "rMin": null,
+     "rMax": null
+    }
+   },
+   "ua": {
+    "ctLock": "MATCH SAVED \u00b7 -12.5 bbl",
+    "badge": "FINAL APPROVED",
+    "ctRows": "LOADED \u00b7 300 ROWS",
+    "bhRows": "LOADED \u00b7 150 ROWS",
+    "exportDisabled": false,
+    "ctActual": "Processed CT Acid Wash \u00b7 CT_actual_1s.txt",
+    "bhActual": "BH_actual_1s.txt"
+   }
+  },
+  "status": "PASS",
+  "note": "Genuine BETA169 upgrade BLOCKED: BETA169 build not supplied."
+ },
+ {
+  "at": "2026-09-28T18:59:29.795Z",
+  "id": "M3-unchanged-revisit",
+  "area": "Caching/M3",
+  "title": "Unchanged revisit of Base Summary and Prediction Runs",
+  "expected": "no chart rebuild",
+  "actual": {
+   "basesummary": {},
+   "review": {}
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:59:30.656Z",
+  "id": "M3-pressure-refresh",
+  "area": "Caching/M3",
+  "title": "Pressure change then revisit Prediction Runs",
+  "expected": "charts rebuilt; dP = BHP \u2212 3600",
+  "actual": {
+   "m3": {
+    "rv53-ct-chart": 2,
+    "rv53-bh-chart": 3
+   },
+   "firstRow": [
+    "5.000",
+    "7300.000",
+    "25.000",
+    "3900.000",
+    "2500.000",
+    "300.000",
+    "600.000"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T18:59:33.512Z",
+  "id": "M3-splitmerge-refresh",
+  "area": "Caching/M3",
+  "title": "Split/merge + Update then revisit Base Summary",
+  "expected": "charts rebuilt",
+  "actual": {
+   "m4": {}
+  },
+  "status": "PASS",
+  "note": "Rescored: rebuild occurs at Update (see M3-splitmerge-refresh-recheck); harness reset counters after Update."
+ },
+ {
+  "at": "2026-09-28T18:59:34.335Z",
+  "id": "M3-multiplier-refresh",
+  "area": "Caching/M3",
+  "title": "Case 3 multiplier change then revisit Prediction Runs",
+  "expected": "Case 3 KPI shows DOL \u00d7 3.00 and stale banner",
+  "actual": {
+   "m5": {
+    "rv53-ct-chart": 2,
+    "rv53-bh-chart": 3
+   },
+   "kpi": "Case 3 Prediction sensitivity case DOL \u00d7 3.00 LIMESTONE \u00d7 2.00 TOTAL MD kh 48427md\u00b7ft AVERAGE PERM MD 40.36mD Clipboard ",
+   "banner": "PREDICTION REFRESH REQUIRED\nCT, Base Case, Case 3 \u00b7 zonation split/merge changed; KM case inputs changed. Replace the affected KM prediction table before final use."
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:00:38.985Z",
+  "id": "PERF-200-switches",
+  "area": "Performance",
+  "title": "200 page switches",
+  "expected": "no errors; bounded memory",
+  "actual": {
+   "median": 298.9,
+   "p90": 481.9,
+   "p99": 532,
+   "max": 548.5,
+   "heapMB": [
+    39.9,
+    40.2
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:00:54.624Z",
+  "id": "PERF-double-click-export",
+  "area": "Exports",
+  "title": "Double-click matching export",
+  "expected": "one download",
+  "actual": {
+   "downloads": 2,
+   "toasts": [
+    "Final zonation updated with VBA layer-safe Split/Merge (81 zones). Review 5 zones thinner than 8 ft; manual boundaries retained.",
+    "KM Matching & Final Results XLSX exported successfully.",
+    "KM Matching & Final Results XLSX exported successfully."
+   ]
+  },
+  "status": "PASS",
+  "note": "Rescored: harness issued a forced second click after the first export completed (sequential). Real dblclick reproduced twice (D-DOUBLE-EXPORT-run1/2): one download each."
+ },
+ {
+  "at": "2026-09-28T19:01:14.009Z",
+  "id": "PERF-rapid-buttons",
+  "area": "Performance",
+  "title": "Rapid repeated Generate/Process clicks",
+  "expected": "no errors; stable current results",
+  "actual": {
+   "errors": [],
+   "ct": 8,
+   "bh": 11,
+   "ctStatus": "current"
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:02:13.103Z",
+  "id": "M3-restored-prediction-replaces-empty",
+  "area": "Caching/M3",
+  "title": "Reload directly onto Prediction Runs",
+  "expected": "restored prediction chart replaces empty placeholder",
+  "actual": {
+   "poly": 4,
+   "empty": false
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:02:15.160Z",
+  "id": "M3-new-job-no-old-charts",
+  "area": "Caching/M3",
+  "title": "New job after completed job",
+  "expected": "no old charts",
+  "actual": {
+   "review": {
+    "poly": 0
+   },
+   "basePolylines": 0
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:12:27.195Z",
+  "id": "D-DOUBLE-EXPORT-run1",
+  "area": "Exports",
+  "title": "Real double-click on export buttons",
+  "expected": "one download per double-click (double-click protection)",
+  "actual": {
+   "matchingDownloads": 1,
+   "auditedDownloads": 1,
+   "t1": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "KM Matching & Final Results XLSX exported successfully."
+   ],
+   "t2": [
+    "Audited XLSX exported successfully."
+   ],
+   "timing": {
+    "overlayAfterMs": 0.3000000002793968,
+    "btnDisabledImmediately": true
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:03.924Z",
+  "id": "D-DOUBLE-EXPORT-run2",
+  "area": "Exports",
+  "title": "Real double-click on export buttons",
+  "expected": "one download per double-click (double-click protection)",
+  "actual": {
+   "matchingDownloads": 1,
+   "auditedDownloads": 1,
+   "t1": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "KM Matching & Final Results XLSX exported successfully."
+   ],
+   "t2": [
+    "Audited XLSX exported successfully."
+   ],
+   "timing": {
+    "overlayAfterMs": 0.2999999998137355,
+    "btnDisabledImmediately": true
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:26.590Z",
+  "id": "M3-splitmerge-refresh-recheck",
+  "area": "Caching/M3",
+  "title": "Split/merge edit + Update: when are Base Summary charts rebuilt?",
+  "expected": "charts reflect new zonation on next view",
+  "actual": {
+   "mutationsDuringEdit": 0,
+   "mutationsAtUpdate": 2,
+   "mutationsOnRevisit": 0
+  },
+  "status": "PASS",
+  "note": "Update re-renders charts immediately (runStep \u2192 renderFinalCharts, chartRevision++); the earlier FAIL cleared mutation counts after Update. Source note: signature uses state.splitmerge (typo for splitMerge, line 12121) \u2014 masked by chartRevision."
+ },
+ {
+  "at": "2026-09-28T19:13:38.997Z",
+  "id": "IMP-ressum-wrong",
+  "area": "Import/RESSUM",
+  "title": "Wrong workbook after valid import",
+  "expected": "rejected; existing 24000-row model retained",
+  "actual": {
+   "rows": 24000,
+   "rkb": 82,
+   "steps": {
+    "refresh": true,
+    "generate": true,
+    "update": true,
+    "export": true
+   },
+   "src": "RESSUM_synthetic_24000.xlsx",
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "Couldn't parse \"RESSUM_wrong.xlsx\": No valid ELAN MD rows were found in the expected RESSUM columns."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:42.164Z",
+  "id": "IMP-ressum-csv",
+  "area": "Import/RESSUM",
+  "title": "CSV (ELAN columns, header row)",
+  "expected": "4000 rows; TVD = TVDSS + RKB(82)",
+  "actual": {
+   "rows": 4000,
+   "rkb": 82,
+   "steps": {
+    "refresh": false,
+    "generate": false,
+    "update": false,
+    "export": false
+   },
+   "src": "RESSUM_direct.csv",
+   "toasts": [
+    "\"RESSUM_direct.csv\" loaded \u2014 4000 ELAN rows prepared with TVD = TVDSS + RKB."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:45.278Z",
+  "id": "IMP-ressum-numeric-text",
+  "area": "Import/RESSUM",
+  "title": "Numbers stored as text incl. \"10,000.00\" thousands separators, trailing blank rows, no RKB cell",
+  "expected": "4000 rows; values parsed; RKB retained from job (82)",
+  "actual": {
+   "rows": 4000,
+   "rkb": 82,
+   "steps": {
+    "refresh": false,
+    "generate": false,
+    "update": false,
+    "export": false
+   },
+   "src": "RESSUM_numeric_text.xlsx",
+   "toasts": [
+    "\"RESSUM_numeric_text.xlsx\" loaded \u2014 4000 ELAN rows prepared with TVD = TVDSS + RKB."
+   ],
+   "firstRows": [
+    {
+     "md": 10000,
+     "tvd": 8082,
+     "tvdss": 8000,
+     "perm": 0,
+     "phi": null,
+     "sw": 39.60560279026018,
+     "lith": null,
+     "kL": 16.799952469374908,
+     "phih": 0.058950844273210255
+    },
+    {
+     "md": 10000.5,
+     "tvd": 8082.150001,
+     "tvdss": 8000.150001,
+     "perm": 36.61706182110281,
+     "phi": 0.1108839614897567,
+     "sw": 45.68446712905029,
+     "lith": 12.706083855318546,
+     "kL": 18.308530910551404,
+     "phih": 0.05544198074487835
+    }
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:49.271Z",
+  "id": "IMP-ressum-duplicate-md",
+  "area": "Import/RESSUM",
+  "title": "Duplicate MD sample",
+  "expected": "Generate blocked with duplicate-MD message",
+  "actual": {
+   "r4": {
+    "rows": 1001,
+    "rkb": 82,
+    "steps": {
+     "refresh": false,
+     "generate": false,
+     "update": false,
+     "export": false
+    },
+    "src": "RESSUM_duplicate_md.xlsx",
+    "toasts": [
+     "\"RESSUM_duplicate_md.xlsx\" loaded \u2014 1001 ELAN rows prepared with TVD = TVDSS + RKB."
+    ]
+   },
+   "t4": [
+    "1 interval(s) loaded, replacing the table.",
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Duplicate log MD 10250 ft. Resolve duplicate samples before generating."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:53.135Z",
+  "id": "PRED-paste-CT_pred_reordered",
+  "area": "Prediction/import",
+  "title": "CT prediction paste: CT_pred_reordered.tsv",
+  "expected": "identical to reference",
+  "actual": {
+   "n": 160,
+   "first": {
+    "volume": 1,
+    "frac": 7200,
+    "rate": 2,
+    "bhp": 3900,
+    "whp": 1300
+   },
+   "toasts": [
+    "2 locally saved CT/Bullheading raw datasets restored.",
+    "160 Prediction rows loaded \u00b7 Volume 1.00\u2013180.00 bbl."
+   ],
+   "sorted": true,
+   "identical": true,
+   "weird": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:54.170Z",
+  "id": "PRED-paste-CT_pred_noheader",
+  "area": "Prediction/import",
+  "title": "CT prediction paste: CT_pred_noheader.tsv",
+  "expected": "identical to reference",
+  "actual": {
+   "n": 160,
+   "first": {
+    "volume": 1,
+    "frac": 7200,
+    "rate": 2,
+    "bhp": 3900,
+    "whp": 1300
+   },
+   "toasts": [
+    "160 Prediction rows loaded \u00b7 Volume 1.00\u2013180.00 bbl."
+   ],
+   "sorted": true,
+   "identical": true,
+   "weird": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:55.207Z",
+  "id": "PRED-paste-CT_pred_blank_trailing",
+  "area": "Prediction/import",
+  "title": "CT prediction paste: CT_pred_blank_trailing.tsv",
+  "expected": "identical to reference",
+  "actual": {
+   "n": 160,
+   "first": {
+    "volume": 1,
+    "frac": 7200,
+    "rate": 2,
+    "bhp": 3900,
+    "whp": 1300
+   },
+   "toasts": [
+    "160 Prediction rows loaded \u00b7 Volume 1.00\u2013180.00 bbl."
+   ],
+   "sorted": true,
+   "identical": true,
+   "weird": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:56.225Z",
+  "id": "PRED-paste-CT_pred_unsorted_dupvol",
+  "area": "Prediction/import",
+  "title": "CT prediction paste: CT_pred_unsorted_dupvol.tsv",
+  "expected": "sorted by volume; 161 rows incl. duplicate volume",
+  "actual": {
+   "n": 161,
+   "first": {
+    "volume": 1,
+    "frac": 7200,
+    "rate": 2,
+    "bhp": 3900,
+    "whp": 1300
+   },
+   "toasts": [
+    "161 Prediction rows loaded \u00b7 Volume 1.00\u2013180.00 bbl."
+   ],
+   "sorted": true,
+   "identical": false,
+   "weird": []
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:13:57.240Z",
+  "id": "PRED-paste-CT_pred_textcells",
+  "area": "Prediction/import",
+  "title": "CT prediction paste: CT_pred_textcells.tsv",
+  "expected": "non-numeric volume row skipped; \"5,000.5\" handled; n/a -> blank",
+  "actual": {
+   "n": 161,
+   "first": {
+    "volume": 1,
+    "frac": 7200,
+    "rate": 2,
+    "bhp": 3900,
+    "whp": 1300
+   },
+   "toasts": [
+    "161 Prediction rows loaded \u00b7 Volume 1.00\u20135000.50 bbl."
+   ],
+   "sorted": true,
+   "identical": false,
+   "weird": [
+    {
+     "volume": 5000.5,
+     "frac": null,
+     "rate": 2,
+     "bhp": 3,
+     "whp": 4
+    }
+   ]
+  },
+  "status": "PASS",
+  "note": "Behaviour consistent with documented rules / volumes reconcile"
+ },
+ {
+  "at": "2026-09-28T19:13:58.250Z",
+  "id": "PRED-paste-CT_pred_4cols",
+  "area": "Prediction/import",
+  "title": "CT prediction paste: CT_pred_4cols.tsv",
+  "expected": "rejected (5 columns required)",
+  "actual": {
+   "n": 161,
+   "first": {
+    "volume": 1,
+    "frac": 7200,
+    "rate": 2,
+    "bhp": 3900,
+    "whp": 1300
+   },
+   "toasts": [
+    "Prediction paste could not be loaded: CT paste must contain 5 Excel columns: Cumulative Volume, Fracture Pressure, Rate, BHP, WHP."
+   ],
+   "sorted": true,
+   "identical": false,
+   "weird": [
+    {
+     "volume": 5000.5,
+     "frac": null,
+     "rate": 2,
+     "bhp": 3,
+     "whp": 4
+    }
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:00.838Z",
+  "id": "PRED-source-unchanged",
+  "area": "Prediction",
+  "title": "Display refresh / pressure round-trip leaves pasted source columns unchanged",
+  "expected": "identical",
+  "actual": {
+   "n": 150
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:08.676Z",
+  "id": "PRED-export-selected-only",
+  "area": "Exports",
+  "title": "Deselect Case 3 then export audited workbook",
+  "expected": "only Case 1 sheets / charts",
+  "actual": "['Summary', 'Job_Inputs', 'Perforations', 'Split_Merge', 'RESSUM_Active', 'Initial_Zonation', 'Final_Zonation', 'Case_1', 'Spurt_Loss_1', 'Case_Properties', 'Diverter_Loadings', 'Analogue_Candidates', 'CT_Actual', 'BH_Actual', 'CT_Prediction_Chart', 'BH_Base_Case_Chart', 'Audit_Log']",
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:16.832Z",
+  "id": "KM-loading-map",
+  "area": "KM/loadings",
+  "title": "Diverter loading lookup mapping",
+  "expected": "400\u2192OPS 100-300, 500\u2192OPS 100-400, 600\u2192OPS 100-500, 300 & 700 unsupported, text labels per lookup",
+  "actual": {
+   "stagesBefore": 14,
+   "stagesAfter": 16,
+   "head": [
+    "Zone",
+    "Spurt_Loss OPS 100-300",
+    "Spurt_Loss OPS 100-400",
+    "Spurt_Loss OPS 100-500",
+    "Spurt_Loss 300 (unsupported)",
+    "Spurt_Loss 700 (unsupported)",
+    "Spurt_Loss OPS 100-600",
+    "Spurt_Loss OPS 100-300",
+    "Spurt_Loss BG50-75",
+    "Spurt_Loss 125",
+    "Spurt_Loss 75",
+    "Spurt_Loss OPS 100-600",
+    "Spurt_Loss 175",
+    "Spurt_Loss 50"
+   ],
+   "status": {
+    "summaryReady": true,
+    "caseSheetReady": false,
+    "reason": "Unsupported Diverter Loading at stage(s) 4, 5"
+   }
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:17.493Z",
+  "id": "KM-stage-remove-renumber",
+  "area": "KM/loadings",
+  "title": "Remove stage 4 (with confirm)",
+  "expected": "later stages renumbered; loadings shift up",
+  "actual": {
+   "diverter0": [
+    "400",
+    "500",
+    "600",
+    "700",
+    "OPS 100-600",
+    "ops100-300"
+   ],
+   "labels": [
+    "MaxCO3-1 | OPS-1",
+    "MaxCO3-2 | OPS-2",
+    "MaxCO3-3 | OPS-3",
+    "MaxCO3-4 | OPS-4",
+    "MaxCO3-5 | OPS-5"
+   ],
+   "count": 15,
+   "dialogs": [
+    {
+     "type": "confirm",
+     "message": "Remove stage 4 and its loadings from all cases? Later stages will be renumbered.",
+     "policy": "accept"
+    }
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:28.426Z",
+  "id": "CHART-ct-prediction-decode",
+  "area": "Charts",
+  "title": "CT Prediction chart series decoded back to data",
+  "expected": "each series has one point per row; first/last points within 1 % of source",
+  "actual": {
+   "axes": {
+    "xMin": 0,
+    "xMax": 300,
+    "pMin": 0,
+    "pMax": 10000,
+    "rMin": 0,
+    "rMax": 3
+   },
+   "series": [
+    {
+     "series": "bhp",
+     "n": 160,
+     "rows": 160,
+     "firstDecoded": [
+      1.01,
+      3900.93
+     ],
+     "firstExpected": [
+      1,
+      3900
+     ],
+     "lastDecoded": [
+      180,
+      4377.71
+     ],
+     "lastExpected": [
+      180,
+      4377
+     ],
+     "ok": true
+    },
+    {
+     "series": "whp",
+     "n": 160,
+     "rows": 160,
+     "firstDecoded": [
+      1.01,
+      1300.31
+     ],
+     "firstExpected": [
+      1,
+      1300
+     ],
+     "lastDecoded": [
+      180,
+      1619.2
+     ],
+     "lastExpected": [
+      180,
+      1618
+     ],
+     "ok": true
+    },
+    {
+     "series": "frac",
+     "n": 160,
+     "rows": 160,
+     "firstDecoded": [
+      1.01,
+      7201.24
+     ],
+     "firstExpected": [
+      1,
+      7200
+     ],
+     "lastDecoded": [
+      180,
+      7359.13
+     ],
+     "lastExpected": [
+      180,
+      7359
+     ],
+     "ok": true
+    },
+    {
+     "series": "rate",
+     "n": 160,
+     "rows": 160,
+     "firstDecoded": [
+      1.01,
+      2
+     ],
+     "firstExpected": [
+      1,
+      2
+     ],
+     "lastDecoded": [
+      180,
+      2.5
+     ],
+     "lastExpected": [
+      180,
+      2.5
+     ],
+     "ok": true
+    }
+   ],
+   "legend": [
+    "BHP (psi)",
+    "Circulation Pressure (psi)",
+    "Frac Pressure",
+    "Injection Rate (BPM)"
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:30.301Z",
+  "id": "CHART-ct-actual-midnight",
+  "area": "Charts",
+  "title": "CT Actual chart across midnight (23:30 \u2192 01:33)",
+  "expected": "monotonic time axis; labels wrap 23:xx \u2192 00:xx",
+  "actual": {
+   "xLabels": [
+    "23:30:00",
+    "23:47:34",
+    "00:05:08",
+    "00:22:42",
+    "00:40:16",
+    "00:57:50",
+    "01:15:24",
+    "01:32:59"
+   ],
+   "mono": true
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:14:30.302Z",
+  "id": "CHART-inventory",
+  "area": "Charts",
+  "title": "Chart / series inventory",
+  "expected": "see chart_inventory.json",
+  "actual": {
+   "ctPrediction": {
+    "series": 4,
+    "strokes": [
+     "#5b9c63",
+     "#c0443b",
+     "#c89d25",
+     "#294f83"
+    ],
+    "points": [
+     160,
+     160,
+     160,
+     160
+    ],
+    "unclipped": 0,
+    "legend": [
+     "BHP (psi)",
+     "Circulation Pressure (psi)",
+     "Frac Pressure",
+     "Injection Rate (BPM)"
+    ]
+   },
+   "bhPrediction": {
+    "series": 8,
+    "strokes": [
+     "#C00000",
+     "#BF9000",
+     "#70AD47",
+     "#7F7F7F",
+     "#548235",
+     "#2F75B5"
+    ],
+    "points": [
+     150,
+     150,
+     30,
+     30,
+     42,
+     150,
+     150,
+     150
+    ],
+    "unclipped": 0,
+    "legend": [
+     "WHP, psi",
+     "dP",
+     "Target dP",
+     "BHP",
+     "Frac Pressure",
+     "Rate, bpm"
+    ]
+   },
+   "ctActual": {
+    "series": 6,
+    "strokes": [
+     "#d83a32",
+     "#27853a",
+     "#111827",
+     "#c12dd1",
+     "#2459d6",
+     "#3c474c"
+    ],
+    "points": [
+     1400,
+     1400,
+     1437,
+     1400,
+     1400,
+     1400
+    ],
+    "unclipped": 0,
+    "legend": [
+     "Circulation Pressure",
+     "Wellhead Pressure",
+     "ANBHP",
+     "Filter DP",
+     "Slurry Rate",
+     "CT Depth"
+    ]
+   },
+   "bhActualTime": {
+    "series": 5,
+    "strokes": [
+     "#d83a32",
+     "#d6bd22",
+     "#27853a",
+     "#c12dd1",
+     "#2459d6"
+    ],
+    "points": [
+     1413,
+     1407,
+     1413,
+     1413,
+     1413
+    ],
+    "unclipped": 0,
+    "legend": [
+     "Treating Pressure",
+     "Annulus Pressure",
+     "BH Pressure",
+     "Stim DP",
+     "Slurry Rate"
+    ]
+   },
+   "bhActualVolume": {
+    "series": 5,
+    "strokes": [
+     "#d83a32",
+     "#d6bd22",
+     "#27853a",
+     "#c12dd1",
+     "#2459d6"
+    ],
+    "points": [
+     1409,
+     1407,
+     1409,
+     1409,
+     1409
+    ],
+    "unclipped": 0,
+    "legend": [
+     "Treating Pressure",
+     "Annulus Pressure",
+     "BH Pressure",
+     "Stim DP",
+     "Slurry Rate"
+    ]
+   },
+   "ctMatch": {
+    "series": 6,
+    "strokes": [
+     "#30255d",
+     "#8a6b1b",
+     "#c6322e",
+     "#58a942",
+     "#2355a3",
+     "#d05a2d"
+    ],
+    "points": [
+     300,
+     300,
+     2600,
+     2600,
+     300,
+     2600
+    ],
+    "unclipped": 0,
+    "legend": []
+   },
+   "bhMatch": {
+    "series": 9,
+    "strokes": [
+     "#8a342d",
+     "#b1902e",
+     "#7b416f",
+     "#555b62",
+     "#c026d3",
+     "#111827",
+     "#6b7f4c",
+     "#355f98",
+     "#d05a2d"
+    ],
+    "points": [
+     150,
+     150,
+     2800,
+     2800,
+     2800,
+     150,
+     150,
+     150,
+     2800
+    ],
+    "unclipped": 0,
+    "legend": []
+   },
+   "bhApproved": {
+    "series": 9,
+    "strokes": [
+     "#8a342d",
+     "#b1902e",
+     "#7b416f",
+     "#555b62",
+     "#c026d3",
+     "#111827",
+     "#6b7f4c",
+     "#355f98",
+     "#d05a2d"
+    ],
+    "points": [
+     150,
+     150,
+     2800,
+     2800,
+     2800,
+     150,
+     150,
+     150,
+     2800
+    ],
+    "unclipped": 0,
+    "legend": [
+     "KM WHP",
+     "KM dP Sim",
+     "Actual TR PRESS",
+     "Actual BHP",
+     "Actual DP Stim",
+     "KM BHP",
+     "Frac Pressure",
+     "KM Rate",
+     "Actual Slurry Rate",
+     "StimDP Target"
+    ]
+   },
+   "ctMatchLegend": [
+    "KM WHP",
+    "KM BHP",
+    "Actual CIRC PRESS",
+    "Actual ANBHP",
+    "KM Rate",
+    "Actual Pump Rate"
+   ],
+   "chart1": {
+    "series": 2,
+    "strokes": [
+     null
+    ],
+    "points": [
+     11106,
+     11115
+    ],
+    "unclipped": 2,
+    "legend": []
+   },
+   "chart2": {
+    "series": 1,
+    "strokes": [
+     null
+    ],
+    "points": [
+     11106
+    ],
+    "unclipped": 1,
+    "legend": []
+   },
+   "chart3": {
+    "series": 6,
+    "strokes": [
+     null
+    ],
+    "points": [
+     1310,
+     2010,
+     2010,
+     2010,
+     2010,
+     1765
+    ],
+    "unclipped": 6,
+    "legend": []
+   }
+  },
+  "status": "PASS",
+  "note": "informational; see evidence"
+ },
+ {
+  "at": "2026-09-28T19:15:22.087Z",
+  "id": "IMP-template-roundtrip",
+  "area": "Import/RESSUM",
+  "title": "Download RESSUM template, fill 3000 rows, re-import",
+  "expected": "schema accepted; 3000 rows; RKB from U2",
+  "actual": {
+   "rows": 3000,
+   "rkb": 82,
+   "toasts": [
+    "OPS derived track prepared with VBA Version#48 source mapping.",
+    "Initial zonation generated with the VBA V48 HumanCluster engine (79 zones, global cap 150).",
+    "Final zonation updated with VBA layer-safe Split/Merge (79 zones). Review 5 zones thinner than 8 ft; manual boundaries retained.",
+    "Cases: Properties Summary refreshed for 4 case(s); dedicated Case sheets ready: 2; multiplier-skipped: 0. Prediction Template data assembled for 2 selected case(s).",
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "Excel template downloaded.",
+    "Model switched \u2014 24000 persisted ELAN rows restored.",
+    "\"RESSUM_template_filled.xlsx\" loaded \u2014 3000 ELAN rows prepared with TVD = TVDSS + RKB."
+   ]
+  },
+  "status": "PASS"
+ },
+ {
+  "at": "2026-09-28T19:15:22.087Z",
+  "id": "PARAM-power-mean-zero",
+  "area": "Models",
+  "title": "Power-mean exponent 0",
+  "expected": "rejected with message, value restored",
+  "actual": {
+   "toast": [
+    "ELAN derived track prepared with VBA Version#48 source mapping.",
+    "Initial zonation generated with the VBA V48 HumanCluster engine (79 zones, global cap 150).",
+    "Final zonation updated with VBA layer-safe Split/Merge (79 zones). Review 5 zones thinner than 8 ft; manual boundaries retained.",
+    "Cases: Properties Summary refreshed for 4 case(s); dedicated Case sheets ready: 2; multiplier-skipped: 0. Prediction Template data assembled for 2 selected case(s).",
+    "Case 1 \u00b7 Zone-by-zone KM table copied to clipboard.",
+    "Power mean exponent must be a non-zero number (negative values such as \u22121 are supported)."
+   ],
+   "value": "-1"
+  },
+  "status": "PASS"
+ },
+ {
+  "id": "REF-RKB=100",
+  "area": "Calculation",
+  "title": "Independent reconciliation after RKB=100",
+  "expected": "0 mismatches (rel \u22641e-9)",
+  "actual": {
+   "zones": 79,
+   "cells": 1659,
+   "mismatches": 0,
+   "worstRel": 2.274075136502661e-15
+  },
+  "status": "PASS"
+ },
+ {
+  "id": "REF-power mean p=-1",
+  "area": "Calculation",
+  "title": "Independent reconciliation after power mean p=-1",
+  "expected": "0 mismatches (rel \u22641e-9)",
+  "actual": {
+   "zones": 79,
+   "cells": 1659,
+   "mismatches": 0,
+   "worstRel": 2.5522507514092182e-15
+  },
+  "status": "PASS"
+ },
+ {
+  "id": "REF-OPS model (perm\u00d71.3)",
+  "area": "Calculation",
+  "title": "Independent reconciliation after OPS model (perm\u00d71.3)",
+  "expected": "0 mismatches (rel \u22641e-9)",
+  "actual": {
+   "zones": 79,
+   "cells": 1659,
+   "mismatches": 0,
+   "worstRel": 1.4051598214261145e-15
+  },
+  "status": "PASS"
+ },
+ {
+  "id": "E2E-01",
+  "area": "Workflow",
+  "title": "Select NFE, enter well NFQ22-4 / reservoir k1, open workspace",
+  "expected": "workspace opens; layer upper-cased",
+  "actual": "header NFE \u00b7 NFQ22-4 \u00b7 K1 (t01_baseline.json)",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "L1-empty-well",
+  "area": "Workflow/L1",
+  "title": "Start with whitespace-only well name",
+  "expected": "blocked with message",
+  "actual": "toast \"Enter a well name before opening the workspace.\"; workspace not opened",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-03",
+  "area": "Import/RESSUM",
+  "title": "Import 24,000-row RESSUM via file chooser",
+  "expected": "24,000 rows; RKB 82 from U2; TVD=TVDSS+RKB",
+  "actual": "24000 rows, RKB 82, 8.4 s",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-04..07",
+  "area": "Workflow",
+  "title": "Refresh \u2192 paste 22 perforations (header + \"10,350.25\") \u2192 Generate \u2192 Update",
+  "expected": "79 zones (59 perforated + 20 blank); rail states advance",
+  "actual": "79 zones, cap 150, rail READY\u2192GENERATED",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-10",
+  "area": "Pressure",
+  "title": "Enter 8500 / 3450 / 0.817 / 0.107",
+  "expected": "no field errors",
+  "actual": "no errors",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-11..12",
+  "area": "Analogue",
+  "title": "Connect workbook, Select, Transfer",
+  "expected": "Case2=NFQ22-2, Case3=NFQ22-1, Case4=NFQ22-5 (independent ranking)",
+  "actual": "matched; multipliers 1.19997\u2026,1.99995\u2026,5.99986\u2026",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-12b",
+  "area": "Analogue",
+  "title": "Repeat Transfer with no changes",
+  "expected": "no invalidation",
+  "actual": "\"Multipliers already match\u2026\" retained",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-13..14",
+  "area": "KM Control",
+  "title": "Select Case 1+3, diverter loadings, Generate Cases + Template",
+  "expected": "Cases 1,3 READY; Cases 2,4 SUMMARY (missing first loading); template 2 cases",
+  "actual": "as expected",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-15",
+  "area": "KM Input",
+  "title": "Copy zone/OPR/spurt tables Case 1..4",
+  "expected": "full-precision values; spurt copy blocked for cases without loadings",
+  "actual": "79 rows each; Case 2/4 spurt \"No Spurt Loss data to copy.\"",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-16",
+  "area": "Prediction",
+  "title": "Paste CT and BH (Base, Case 3) prediction tables; fibre loading + shared Target dP",
+  "expected": "rows loaded; stages detected; dP=BHP\u22123450",
+  "actual": "160/150/150 rows; 2 diverter + 3 high-rate stages",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-17",
+  "area": "CT Actual",
+  "title": "Load 1 s CT, process",
+  "expected": "8 schedule rows; balance closes within window",
+  "actual": "8 rows; REVIEW (pass difference 11.6 % >10 % \u2014 genuine for dataset)",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-18",
+  "area": "BH Actual",
+  "title": "Load BH, J4..J9, plan with split stage, process",
+  "expected": "schedule matches synthetic truth exactly",
+  "actual": "11 rows exact; 10 bbl pre-stage excluded & reported",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-19..21",
+  "area": "Matching",
+  "title": "CT KM paste, shift \u221212.5, save; BH KM paste, stage inputs, save Case 1 alignment, approve",
+  "expected": "approve rejected before save; approved after",
+  "actual": "as expected (t04)",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-22",
+  "area": "Matching",
+  "title": "Final Interpretation text",
+  "expected": "persisted; in BH export image",
+  "actual": "persisted; rendered in image",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-23",
+  "area": "Exports",
+  "title": "Matching export, audited export, audit CSV",
+  "expected": "files produced; 7-sheet matching scope",
+  "actual": "7 sheets in required order; 20-sheet audited; CSV",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "E2E-24",
+  "area": "Persistence",
+  "title": "Close browser and reopen",
+  "expected": "full restoration",
+  "actual": "CT lock, approval, predictions, raw data restored",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "REF-zones-case1",
+  "area": "Calculation",
+  "title": "Independent recalculation of all Case 1 zone cells (clipboard)",
+  "expected": "0 mismatches",
+  "actual": "1659 cells, 0 mismatches, worst rel 2.3e-15",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "REF-zones-case3",
+  "area": "Calculation",
+  "title": "Independent recalculation of all Case 3 zone cells (clipboard)",
+  "expected": "0 mismatches",
+  "actual": "1659 cells, 0 mismatches",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "REF-spurt",
+  "area": "Calculation",
+  "title": "Spurt-loss lookup Case 1 & 3",
+  "expected": "0 mismatches",
+  "actual": "474 cells, 0 mismatches",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "REF-summary",
+  "area": "Calculation",
+  "title": "Net MD, kH, lime/dol %, avg k",
+  "expected": "independent values",
+  "actual": "1200.0 ft; 22100.896 mD\u00b7ft; 54.625/45.375 %; 18.4174 mD \u2014 equal",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-final-zonation",
+  "area": "Exports",
+  "title": "Final_Zonation sheet vs independent",
+  "expected": "0 mismatches",
+  "actual": "1501 cells, 0 mismatches",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-case-sheets",
+  "area": "Exports",
+  "title": "Case_1/Case_3/Spurt sheets vs clipboard",
+  "expected": "identical",
+  "actual": "identical",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-ressum-active",
+  "area": "Exports",
+  "title": "RESSUM_Active 24,000 rows vs raw",
+  "expected": "0 diffs",
+  "actual": "0 diffs; 53 missing values written as empty text (see D-07)",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-ct-speed",
+  "area": "Exports/L3",
+  "title": "CT_Actual speed header/precision",
+  "expected": "header ft/s; full precision",
+  "actual": "\"CT Speed [ft/s]\"; full double precision",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-structure",
+  "area": "Exports",
+  "title": "XML well-formedness, content types, table header/cell parity, image anchors",
+  "expected": "no issues",
+  "actual": "0 issues both workbooks",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-libreoffice",
+  "area": "Exports",
+  "title": "Open/convert both exports in LibreOffice Calc 24.2.7 (Excel unavailable)",
+  "expected": "loads",
+  "actual": "both converted to ODS without error",
+  "status": "PASS",
+  "note": "Not Microsoft Excel",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-image-bh",
+  "area": "Exports",
+  "title": "Approved BH image content",
+  "expected": "shift, dP@3450, StimDP, fibre boxes, interpretation",
+  "actual": "verified visually",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "EXP-image-ct",
+  "area": "Exports",
+  "title": "CT Wash Match image content",
+  "expected": "shift \u221212.5 applied, no annotation",
+  "actual": "verified visually",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "AUDIT-coverage",
+  "area": "Audit",
+  "title": "Audit log covers workflow actions",
+  "expected": "entries for each step",
+  "actual": "87 entries, 36 action types",
+  "status": "PASS",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "AUDIT-noop-pressure",
+  "area": "Audit",
+  "title": "No-op pressure re-entry",
+  "expected": "no edit logged",
+  "actual": "EDIT_PRESSURE_INPUT logged for unchanged values",
+  "status": "FAIL",
+  "note": "D-09",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "BLK-benchmark",
+  "area": "Blocked",
+  "title": "Benchmark checks (24,000 rows / 22 perfs / 1,200 ft / 35-65 % / 49 zones / 3,450 psi / 418.91 bbl)",
+  "expected": "-",
+  "actual": "benchmark datasets not supplied; synthetic analogues used (24,000 rows, 22 perfs, 1,200 ft reproduced; 49 zones / 35-65 % / 418.91 bbl dataset-specific)",
+  "status": "BLOCKED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "BLK-upgrade-BETA169",
+  "area": "Blocked",
+  "title": "Genuine BETA169 \u2192 BETA170 upgrade",
+  "expected": "-",
+  "actual": "BETA169 build and job not supplied; only a relabelled-revision simulation executed (PASS)",
+  "status": "BLOCKED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "BLK-excel",
+  "area": "Blocked",
+  "title": "Open exports in Microsoft Excel / repair prompts",
+  "expected": "-",
+  "actual": "Excel not available; LibreOffice Calc used",
+  "status": "BLOCKED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "BLK-prev-uat",
+  "area": "Blocked",
+  "title": "Comparison with previous UAT report",
+  "expected": "-",
+  "actual": "report not supplied; regression IDs taken from the prompt",
+  "status": "BLOCKED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "BLK-perf-baseline",
+  "area": "Blocked",
+  "title": "Performance vs previous version",
+  "expected": "-",
+  "actual": "previous version not supplied; absolute timings only",
+  "status": "BLOCKED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "BLK-reference-workbooks",
+  "area": "Blocked",
+  "title": "Reference calculation workbooks / VBA V48",
+  "expected": "-",
+  "actual": "not supplied; zonation boundary selection (HumanCluster) and BH stage state-machine verified for consistency only",
+  "status": "BLOCKED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "NT-real-clipboard-excel",
+  "area": "Not tested",
+  "title": "Pasting copied tables into the real KM workbook",
+  "expected": "-",
+  "actual": "-",
+  "status": "NOT TESTED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "NT-multi-tab",
+  "area": "Not tested",
+  "title": "Two tabs of the app open simultaneously (IndexedDB blocked path)",
+  "expected": "-",
+  "actual": "-",
+  "status": "NOT TESTED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "NT-other-browsers",
+  "area": "Not tested",
+  "title": "Edge/Firefox/Safari; only Chromium 141 tested",
+  "expected": "-",
+  "actual": "-",
+  "status": "NOT TESTED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "NT-hdpi",
+  "area": "Not tested",
+  "title": "Viewport/zoom variations other than 1600\u00d71000",
+  "expected": "-",
+  "actual": "-",
+  "status": "NOT TESTED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "NT-tooltips",
+  "area": "Not tested",
+  "title": "Tooltip values on hover for every chart (spot-checked by source only)",
+  "expected": "-",
+  "actual": "-",
+  "status": "NOT TESTED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "NT-bh-ops-type",
+  "area": "Not tested",
+  "title": "Bullheading OPS diverter type processing (MaxCO3 only)",
+  "expected": "-",
+  "actual": "-",
+  "status": "NOT TESTED",
+  "note": "",
+  "source": "compiled from evidence files"
+ },
+ {
+  "id": "D05-ct-axis-labels",
+  "area": "Charts",
+  "title": "CT Actual pressure/depth tick labels at small range (3000\u20133000.5 psi)",
+  "expected": "distinct, adequate-precision labels as other charts",
+  "actual": "labels 3000 \u00d78, 3001 (toFixed(0), line 10685)",
+  "status": "FAIL",
+  "note": "D-05"
+ },
+ {
+  "id": "D06-thin-zone-msg",
+  "area": "Zonation",
+  "title": "Thin-zone toast with no manual corrections",
+  "expected": "message reflects generated zones",
+  "actual": "\"Review 5 zones thinner than 8 ft; manual boundaries retained.\" with 0 split/merge rows",
+  "status": "FAIL",
+  "note": "D-06"
+ },
+ {
+  "id": "D07-empty-text-cells",
+  "area": "Exports",
+  "title": "Blank values in exports",
+  "expected": "true blank cells",
+  "actual": "written as empty inline strings (RESSUM_Active 53, Diverter_Loadings 22, CT_Actual 7, BH_Actual 15)",
+  "status": "FAIL",
+  "note": "D-07"
+ },
+ {
+  "id": "D08-placeholder-after-platform-change",
+  "area": "Analogue",
+  "title": "Suggestions panel after platform rename",
+  "expected": "prompt to click Select Cases",
+  "actual": "\"Connect the analogue workbook, then click Select Cases.\" although DB connected (toast is correct)",
+  "status": "FAIL",
+  "note": "D-08"
+ }
+]
