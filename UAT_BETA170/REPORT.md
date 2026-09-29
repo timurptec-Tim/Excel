@@ -53,7 +53,7 @@
 | D-10 | Low | Latent code defect (source-verified, no observed impact): the chart-cache signature uses `state.splitmerge` (typo). |
 
 ### What could not be verified
-- Benchmark datasets: 24,000 rows / 22 perfs / 1,200 ft / 35 % limestone and 65 % dolomite / 49 zones / 3,450 psi / 418.91 bbl. The datasets were not supplied. Synthetic data reproduced 24,000 rows, 22 perfs and 1,200 ft, but 49 zones, 35/65 % and 418.91 bbl are dataset-specific.
+- **Reproduction of the customer benchmark job:** 24,000 rows / 22 perfs / 1,200 ft / 35 % limestone and 65 % dolomite / 49 zones / 3,450 psi / 418.91 bbl. The real datasets were not supplied, so this remains BLOCKED. A synthetic benchmark replica engineered so that the true answers equal every one of these figures **passed all 8 checks** in the real app (§5.3). This verifies calculation correctness on benchmark-shaped data. It cannot prove that the real job reproduces the figures, because its depths, logs and CT recording differ.
 - Genuine BETA169 → BETA170 upgrade (BETA169 not supplied).
 - Microsoft Excel behaviour and repair prompts.
 - Comparison with the previous UAT report and previous-version performance.
@@ -80,11 +80,11 @@ D-01 → D-02 → D-03 → D-04, then the Low items (see §10).
 
 ## 3. Test matrix summary
 
-243 test IDs in `evidence/test_matrix_final.json`. Raw run records, including re-scoring notes, are in `evidence/results.jsonl`.
+251 test IDs in `evidence/test_matrix_final.json`, including 8 benchmark-replica checks. Raw run records, including re-scoring notes, are in `evidence/results.jsonl`.
 
 | Status | Count |
 |---|---|
-| PASS | 209 |
+| PASS | 217 |
 | FAIL | 20 (9 distinct confirmed defects; several IDs share a root cause) |
 | BLOCKED | 6 |
 | NOT TESTED | 6 |
@@ -247,6 +247,28 @@ Written independently in `harness/ref_calc.py`.
 | CT schedule (1 s) | 8 rows; fill 15.01, soak 16.47, transition 0.20, run-in 18.63, passes 25.00 + 30.63 / 62.50 / 50.13; window 218.56 = allocated 218.56 | window closes; **0.525 bbl unreported outside window (D-03)** | — |
 | CT speeds | soak −30 ft/min → −0.5 ft/s; passes ∓20 ft/min → ∓0.33333 ft/s; clipboard 4 dp; export full precision | exact | — |
 
+### 5.3 Benchmark replica (synthetic)
+
+`harness/gen_benchmark.py` builds a dataset whose true answers equal the brief's benchmark figures. The expected values come from the construction, not from app output:
+- **Lithology:** each perforation has uniform lithology, code 13.5 → VDOL 1 or 8.5 → VDOL 0. 780 of 1,200 ft are dolomite, so the expected split is exactly 65 % dolomite / 35 % limestone.
+- **Permeability:** 16 perforations have constant permeability (1 zone each) and 6 have a single sharp step (1 ↔ 50 mD, 2 zones each). All 22 perforations are separated by gaps, giving 21 blank zones, so 16 + 12 + 21 = 49 final zones.
+- **CT recording:** the meter lags one sample and pumping stops at the 5-ft arrival, so every pumped barrel lies inside the processing window. The total pumped is 418.910000 bbl.
+
+The replica ran through the real UI on a clean profile (`t22_benchmark.js`) and was reconciled independently (`ref_bench.py`).
+
+| Check | Expected | Actual | Status |
+|---|---|---|---|
+| RESSUM rows | 24,000 | 24,000 | PASS |
+| Perforation intervals | 22 | 22 | PASS |
+| Net perforated MD | 1,200.0 ft | 1200.0 | PASS |
+| Limestone / dolomite (Base Summary and KM Input) | 35.0 % / 65.0 % | 35.0 % / 65.0 % | PASS |
+| Final zones, baseline configuration | 49 (21 blank) | 49 (21 blank); Prediction Runs shows 49 | PASS |
+| Probe reservoir pressure | 3,450 psi | 3450.0 psi | PASS |
+| CT volume balance | 418.91 bbl | processed window 418.91 = allocated 418.91; unallocated 0.000000; status PASS | PASS |
+| Independent recalculation of all 49 zones | 0 mismatches | 1,029 cells, 0 mismatches (worst rel. 2.2e-13); net 1200.0; dolomite 65.000 % | PASS |
+
+This replica was built to avoid the D-03 condition (no pumping outside the processing window). With real recordings, D-03 can make the reported balance differ from the true pumped total.
+
 ---
 
 ## 6. Import, export and chart reconciliation
@@ -343,7 +365,7 @@ Stress (15 rapid Generate clicks, 8 rapid Process clicks, double-clicked exports
 - `harness/t01…t21*.js`, `r01…r04*.js`: test scripts, one per area.
 - `harness/gen_*.py`: deterministic synthetic data. `ref_calc.py`, `ref_params.py`: independent calculations. `export_inspect.py`, `export_cells.py`: export checks.
 - `evidence/`: `results.jsonl` (every executed check), `test_matrix_final.json`, reconciliation JSON, `perf.json`, exported workbooks, screenshots, extracted chart images, LibreOffice conversions, SHA-256 files.
-- To reproduce: `python3 harness/gen_data.py && python3 harness/gen_analogue.py && python3 harness/gen_rank.py && python3 harness/gen_variants.py && python3 harness/gen_imports.py`; place the BETA170 HTML at `src/BETA170.html`; then run `node harness/t01_baseline.js`, `t02…`, `t03…`, `t04…` and `t05…` in order. Copy `profiles/baseline` to `profiles/golden`, then run the remaining `t1x` scripts.
+- To reproduce: `python3 harness/gen_data.py && python3 harness/gen_analogue.py && python3 harness/gen_rank.py && python3 harness/gen_variants.py && python3 harness/gen_imports.py && python3 harness/gen_benchmark.py`; place the BETA170 HTML at `src/BETA170.html`; then run `node harness/t01_baseline.js`, `t02…`, `t03…`, `t04…` and `t05…` in order. Copy `profiles/baseline` to `profiles/golden`, then run the remaining `t1x` scripts.
 - **Not committed:** the application HTML and extracted script. The instruction was not to upload application code to external services.
 
 ## 13. Untested areas and missing inputs
@@ -355,5 +377,4 @@ Stress (15 rapid Generate clicks, 8 rapid Process clicks, double-clicked exports
   - other viewports and zoom levels;
   - per-chart tooltip values;
   - the Bullheading OPS diverter type (MaxCO3 only);
-  - HumanCluster boundary-selection parity with VBA (only consistency and coverage were checked);
-  - the benchmark "49 final zones" configuration.
+  - HumanCluster boundary-selection parity with VBA (only consistency and coverage were checked; the 49-zone benchmark configuration passed on a synthetic replica, §5.3).
